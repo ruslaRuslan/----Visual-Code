@@ -43,3 +43,7 @@ const name = "Ruslan and Ali";
 
 // console.log(name.split(" ")); //  ['Ruslan', 'and', 'Ali']
 // split string-i massive yigir
+
+//----------------------------------------------------------------------------------------------
+console.log(name.toLowerCase()); //ruslan and ali (hamsini kiciltdi)
+console.log(name.toUpperCase()); // RUSLAN AND ALI (hamsini boyutdu)
