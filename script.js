@@ -10,4 +10,4 @@ const name = "Ruslan and Ali";
 // console.log(name.includes("8nd")); //false
 // eyer metndeki yaziraldan biri varsa true verecek. Eyer yoxdusa false qaytaracax!
 
-//---------------------------------------------------
+//----------------------------------------------------------------------------------------------
