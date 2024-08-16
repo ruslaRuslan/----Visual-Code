@@ -49,5 +49,5 @@ const name = "Ruslan and Ali";
 // console.log(name.toUpperCase()); // RUSLAN AND ALI (hamsini boyutdu)
 
 //----------------------------------------------------------------------------------------------
-let ad = "            Salam 57            ";
-console.log(ad.trim()); //Salam 57  (sonan ve evvelden bosluqlari silir)
+// let ad = "            Salam 57            ";
+// console.log(ad.trim()); //Salam 57  (sonan ve evvelden bosluqlari silir)
