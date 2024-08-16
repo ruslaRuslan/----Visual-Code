@@ -38,3 +38,8 @@ const name = "Ruslan and Ali";
 // console.log(name.slice(4, 8));
 // console.log(name.slice(3, 7)); // lan
 // console.log(name.slice(5, 9)); // n an (5-den basdiyacax 9 olmamis dayanacax)
+
+//----------------------------------------------------------------------------------------------
+
+// console.log(name.split(" ")); //  ['Ruslan', 'and', 'Ali']
+// split string-i massive yigir
