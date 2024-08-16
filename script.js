@@ -45,5 +45,9 @@ const name = "Ruslan and Ali";
 // split string-i massive yigir
 
 //----------------------------------------------------------------------------------------------
-console.log(name.toLowerCase()); //ruslan and ali (hamsini kiciltdi)
-console.log(name.toUpperCase()); // RUSLAN AND ALI (hamsini boyutdu)
+// console.log(name.toLowerCase()); //ruslan and ali (hamsini kiciltdi)
+// console.log(name.toUpperCase()); // RUSLAN AND ALI (hamsini boyutdu)
+
+//----------------------------------------------------------------------------------------------
+let ad = "            Salam 57            ";
+console.log(ad.trim()); //Salam 57  (sonan ve evvelden bosluqlari silir)
