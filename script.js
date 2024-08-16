@@ -27,3 +27,14 @@ const name = "Ruslan and Ali";
 //----------------------------------------------------------------------------------------------
 
 // console.log(name.replace("and", "&")); // Ruslan & Ali (var olan stringi isdediyimizle evez ede bilerik)
+
+//----------------------------------------------------------------------------------------------
+
+// console.log(name.slice(0, 3)); // Rus
+// console.log(name.slice(8, 10)); // nd
+// console.log(name.slice(8)); // nd Ali
+// console.log(name.slice(2, 12)); // slan and A
+// console.log(name.slice(5, 8)); // n a
+// console.log(name.slice(4, 8));
+// console.log(name.slice(3, 7)); // lan
+// console.log(name.slice(5, 9)); // n an (5-den basdiyacax 9 olmamis dayanacax)
