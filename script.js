@@ -23,3 +23,7 @@ const name = "Ruslan and Ali";
 
 //----------------------------------------------------------------------------------------------
 // console.log(name.repeat(3)); // Ruslan and AliRuslan and AliRuslan and Ali  (3 defe tekrar string-de olani tekrar qaytarir qaytarir.)
+
+//----------------------------------------------------------------------------------------------
+
+// console.log(name.replace("and", "&")); // Ruslan & Ali (var olan stringi isdediyimizle evez ede bilerik)
