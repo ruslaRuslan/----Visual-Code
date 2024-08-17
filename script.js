@@ -103,3 +103,31 @@ let people = [
 // let newArray = people.map((person) => `${person.name} (${person.age})`);
 // console.log(newArray); //  ['Ruslan (23)', 'Ali (24)', 'Ramin (21)', 'Isa (26)']
 // map massiv-de deyisiklik etmek ucun isdifade olunur!
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// let adults = [];
+// for (let i = 0; i < people.length; i++) {
+//   if (people[i].age >= 18) {
+//     adults.push(people[i]);
+//   }
+// }
+// console.log(adults);
+// {name: 'Ruslan', age: 23, budget: 2500}
+// {name: 'Ali', age: 24, budget: 4200}
+// {name: 'Ramin', age: 21, budget: 2400}
+// {name: 'Isa', age: 26, budget: 3140}
+
+// (bu for ile olan hali  idi)
+// _____________________________________________________________________________________________________________________________________
+
+// Filter
+const adults = people.filter((person) => {
+  if (person.age >= 23) {
+    return true;
+  }
+});
+console.log(adults);
+// {name: 'Ruslan', age: 23, budget: 2500}
+//{name: 'Ali', age: 24, budget: 4200}
+//{name: 'Isa', age: 26, budget: 3140}
