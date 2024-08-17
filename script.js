@@ -133,6 +133,17 @@ let people = [
 //{name: 'Isa', age: 26, budget: 3140}
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
-// Reduce
-let amount = people.reduce((total, person) => total + person.budget, 0);
-console.log(amount); //12240
+// // Reduce
+// let amount = people.reduce((total, person) => total + person.budget, 0);
+// console.log(amount); //12240
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+const adults = people.find((person) => {
+  if (person.age >= 23) {
+    return true;
+  }
+});
+console.log(adults);
+// {name: 'Ruslan', age: 23, budget: 2500}
+// ilk tapdigini verdi
