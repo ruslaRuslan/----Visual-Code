@@ -149,6 +149,7 @@ let people = [
 // // ilk tapdigini verdi
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+// findIndex
 
 // const adults = people.findIndex((person) => {
 //   if (person.age > 23) {
@@ -160,9 +161,19 @@ let people = [
 //necenci index oldugunu bize gosterdi
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
-
-let info = people.every((person) => {
-  return person.age >= 21;
-});
-console.log(info);
+// every
+// let info = people.every((person) => {
+//   return person.age >= 21;
+// });
+// console.log(info);
 // eyer 1 false olarsa false qaytaracax. hamsi true olmalidi
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// some
+
+let info = people.some((person) => {
+  return person.age >= 25;
+});
+console.log(info); // true
+// 1 dene true olarsa true qaytarcax, hamsi false olsa false qaytaracax (en azi 1 true olmalidi)
