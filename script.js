@@ -79,7 +79,17 @@ let people = [
   },
 ];
 
-people.forEach(function (person) {
+// people.forEach(function (person) {
+//   console.log(person);
+// });
+
+// {name: 'Ruslan', age: 23, budget: 2500}
+// {name: 'Ali', age: 24, budget: 4200}
+// {name: 'Ramin', age: 21, budget: 2400}
+// {name: 'Isa', age: 26, budget: 3140}
+// _______________________________________________________________________________________________________________________________________
+
+people.forEach((person) => {
   console.log(person);
 });
 // {name: 'Ruslan', age: 23, budget: 2500}
