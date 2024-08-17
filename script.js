@@ -139,11 +139,22 @@ let people = [
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-const adults = people.find((person) => {
-  if (person.age >= 23) {
+// const adults = people.find((person) => {
+//   if (person.age >= 23) {
+//     return true;
+//   }
+// });
+// console.log(adults);
+// // {name: 'Ruslan', age: 23, budget: 2500}
+// // ilk tapdigini verdi
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+const adults = people.findIndex((person) => {
+  if (person.age > 23) {
     return true;
   }
 });
 console.log(adults);
-// {name: 'Ruslan', age: 23, budget: 2500}
-// ilk tapdigini verdi
+// 1
+//necenci index oldugunu bize gosterdi
