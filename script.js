@@ -150,11 +150,19 @@ let people = [
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-const adults = people.findIndex((person) => {
-  if (person.age > 23) {
-    return true;
-  }
-});
-console.log(adults);
+// const adults = people.findIndex((person) => {
+//   if (person.age > 23) {
+//     return true;
+//   }
+// });
+// console.log(adults);
 // 1
 //necenci index oldugunu bize gosterdi
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+let info = people.every((person) => {
+  return person.age >= 21;
+});
+console.log(info);
+// eyer 1 false olarsa false qaytaracax. hamsi true olmalidi
