@@ -49,5 +49,40 @@ const name = "Ruslan and Ali";
 // console.log(name.toUpperCase()); // RUSLAN AND ALI (hamsini boyutdu)
 
 //----------------------------------------------------------------------------------------------
+
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 // let ad = "            Salam 57            ";
 // console.log(ad.trim()); //Salam 57  (sonan ve evvelden bosluqlari silir)
+
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_Massiv-in metodlari_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+let people = [
+  {
+    name: "Ruslan",
+    age: 23,
+    budget: 2500,
+  },
+  {
+    name: "Ali",
+    age: 24,
+    budget: 4200,
+  },
+  {
+    name: "Ramin",
+    age: 21,
+    budget: 2400,
+  },
+  {
+    name: "Isa",
+    age: 26,
+    budget: 3140,
+  },
+];
+
+people.forEach(function (person) {
+  console.log(person);
+});
+// {name: 'Ruslan', age: 23, budget: 2500}
+// {name: 'Ali', age: 24, budget: 4200}
+// {name: 'Ramin', age: 21, budget: 2400}
+// {name: 'Isa', age: 26, budget: 3140}
