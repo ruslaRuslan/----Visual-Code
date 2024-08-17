@@ -78,7 +78,7 @@ let people = [
     budget: 3140,
   },
 ];
-
+// forEach
 // people.forEach(function (person) {
 //   console.log(person);
 // });
@@ -89,10 +89,17 @@ let people = [
 // {name: 'Isa', age: 26, budget: 3140}
 // _______________________________________________________________________________________________________________________________________
 
-people.forEach((person) => {
-  console.log(person);
-});
+// forEach
+// people.forEach((person) => console.log(person));
+
 // {name: 'Ruslan', age: 23, budget: 2500}
 // {name: 'Ali', age: 24, budget: 4200}
 // {name: 'Ramin', age: 21, budget: 2400}
 // {name: 'Isa', age: 26, budget: 3140}
+// void funksiyadi hecneyi return etmir!
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// Map
+// let newArray = people.map((person) => `${person.name} (${person.age})`);
+// console.log(newArray); //  ['Ruslan (23)', 'Ali (24)', 'Ramin (21)', 'Isa (26)']
+// map massiv-de deyisiklik etmek ucun isdifade olunur!
