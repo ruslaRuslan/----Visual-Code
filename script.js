@@ -122,12 +122,17 @@ let people = [
 // _____________________________________________________________________________________________________________________________________
 
 // Filter
-const adults = people.filter((person) => {
-  if (person.age >= 23) {
-    return true;
-  }
-});
-console.log(adults);
+// const adults = people.filter((person) => {
+//   if (person.age >= 23) {
+//     return true;
+//   }
+// });
+// console.log(adults);
 // {name: 'Ruslan', age: 23, budget: 2500}
 //{name: 'Ali', age: 24, budget: 4200}
 //{name: 'Isa', age: 26, budget: 3140}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// Reduce
+let amount = people.reduce((total, person) => total + person.budget, 0);
+console.log(amount); //12240
