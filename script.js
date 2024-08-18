@@ -206,6 +206,29 @@
 // 2. *Ədədlər arasında ən böyük ədədi tapın*
 //    İstifadəçidən üç fərqli ədəd alın və bu ədədlər arasında ən böyüyünü tapmaq üçün bir funksiyanı yazın.
 
+let eded1 = prompt("birinci ededi yaz");
+let eded2 = prompt("ikinci ededi yaz");
+let eded3 = prompt("ucuncu ededi yaz");
+if ((!isNaN(eded1), !isNaN(eded2), !isNaN(eded3))) {
+  if (eded1 > eded2 && eded1 > eded3) {
+    console.log(
+      ` birinci eded  ${eded1} boyukdur diger iki eded ${eded2} ve ${eded3}`
+    );
+  } else if (eded2 > eded1 && eded2 > eded3) {
+    console.log(
+      `ikinci yazilan eded ${eded2} boyukdur diger iki eded ${eded1} ve ${eded3}`
+    );
+  } else if (eded3 > eded1 && eded3 > eded2) {
+    console.log(
+      `ucuncu yazilan eded ${eded3} boyukdur diger iki eded ${eded1} ve ${eded2}`
+    );
+  } else {
+    console.log("xais olunur 3 ferqli eded yazin! (elave nese yazmayin!)");
+  }
+} else {
+  console.log("xais olunur 3 ferqli eded yazin! (elave nese yazmayin!)");
+}
+
 // 3. *Verilmiş ədədin faktorialını hesablayın*
 //    İstifadəçidən bir ədəd alın və bu ədədin faktorialını hesablayan bir funksiyanı yazın.
 
