@@ -244,21 +244,29 @@
 //    İstifadəçidən bir ədəd alın və bu ədədin faktorialını hesablayan bir funksiyanı yazın.
 
 // Faktorial hesablayan funksiya
-let user = parseFloat(prompt("isdediyiniz ededin faktorialini tapin"));
-let result = 1;
-if (0 < user) {
-  for (let i = 1; i <= user; i++) {
-    result *= i;
-  }
-  console.log(result);
-} else {
-  console.log("eded yazin ve 0-dan asagi hecne yazmayin!");
-}
+// let user = parseFloat(prompt("isdediyiniz ededin faktorialini tapin"));
+// let result = 1;
+// if (0 < user) {
+//   for (let i = 1; i <= user; i++) {
+//     result *= i;
+//   }
+//   console.log(result);
+// } else {
+//   console.log("eded yazin ve 0-dan asagi hecne yazmayin!");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 4. *Ədədlər siyahısının cəmini tapın*
 //    Verilmiş bir ədəd siyahısının cəmini hesablayan bir funksiyanı yazın.
+
+const ededler = [1, 2, 3, 4, 5];
+function hesablama(siyahi) {
+  return siyahi.reduce((a, b) => a + b);
+}
+console.log(hesablama(ededler));
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // 5. *Sətirdəki samit hərfləri sayın*
 //    İstifadəçidən bir sətir alın və bu sətirdə neçə samit hərf olduğunu sayan bir funksiyanı yazın.
