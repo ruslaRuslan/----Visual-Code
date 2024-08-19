@@ -22,7 +22,7 @@
 // // console.log(name.lastIndexOf("and", 1201)); // 7 reqemi 7-dan yuxari ne reqem yazsam 7 verecek (eyer 11-den asagi yazsam -1 verecek)
 
 // //----------------------------------------------------------------------------------------------
-// // console.log(name.repeat(3)); // Ruslan and AliRuslan and AliRuslan and Ali  (3 defe tekrar string-de olani tekrar qaytarir qaytarir.)
+// // console.log(name.repeat(3)); // Ruslan and AliRuslan and AliRuslan and Ali  (3 defe tekrar string-de olani tekrar qaytarir.)
 
 // //----------------------------------------------------------------------------------------------
 
@@ -330,3 +330,5 @@
 //     İstifadəçiyə sıralanmış bir siyahı verin və bu siyahıda müəyyən bir elementin yerini binary search algoritmi ilə tapmaq üçün bir funksiyanı yazın
 
 // yazammadim ay Muxtar
+
+// ---------------------------------------------------------------------------------------------------------------------------------
