@@ -277,16 +277,30 @@
 // 6. *Ədədi çevirmək (reverse) və tərsinə yazdırmaq*
 //    İstifadəçidən bir ədəd alın və bu ədədin rəqəmlərini tərsinə çevirərək ekrana yazdıran bir funksiyanı yazın.
 
-let user = prompt(
-  "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
-);
-let tersEded = user.split("").reverse().join("");
-console.log(tersEded);
+// let user = prompt(
+//   "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
+// );
+// if (Number(user)) {
+//   let tersEded = user.split("").reverse().join("");
+//   console.log(tersEded);
+// } else {
+//   console.log("reqem ve ya eded yaz (ayri hecne yazma)!!");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 7. *Sətirdəki hərflərin sırasını dəyişdirin*
 //    Verilmiş bir sətirin hərflərini tərsinə çevirən bir funksiyanı yazın.
+
+let user = prompt(
+  "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
+);
+if (!Number(user)) {
+  let tersEded = user.split("").reverse().join("");
+  console.log(tersEded);
+} else {
+  console.log("ancax string yaz (ayri hecne yazma)!!");
+}
 
 // 8. *Fibonacci seriyasını yaratmaq*
 //    İstifadəçidən neçə elementli bir Fibonacci seriyası yaratmaq istədiyini soruşun və bu seriyanı yaradan bir funksiyanı yazın.
