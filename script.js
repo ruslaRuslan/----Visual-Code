@@ -292,21 +292,38 @@
 // 7. *Sətirdəki hərflərin sırasını dəyişdirin*
 //    Verilmiş bir sətirin hərflərini tərsinə çevirən bir funksiyanı yazın.
 
-let user = prompt(
-  "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
-);
-if (!Number(user)) {
-  let tersEded = user.split("").reverse().join("");
-  console.log(tersEded);
-} else {
-  console.log("ancax string yaz (ayri hecne yazma)!!");
-}
+// let user = prompt(
+//   "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
+// );
+// if (!Number(user)) {
+//   let tersEded = user.split("").reverse().join("");
+//   console.log(tersEded);
+// } else {
+//   console.log("ancax string yaz (ayri hecne yazma)!!");
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // 8. *Fibonacci seriyasını yaratmaq*
 //    İstifadəçidən neçə elementli bir Fibonacci seriyası yaratmaq istədiyini soruşun və bu seriyanı yaradan bir funksiyanı yazın.
 
+// alinmadi ay Muxtar
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // 9. *Sözün palindrom olub-olmadığını yoxlayın*
 //    İstifadəçidən bir söz alın və bu sözün palindrom olub-olmadığını yoxlayan bir funksiyanı yazın.
+
+let user = prompt("Sözün palindrom olub-olmadigini yoxla:");
+function isPalindrome(string) {
+  let reversed = user.split("").reverse().join("");
+  return string === reversed;
+}
+if (isPalindrome(user)) {
+  console.log(`${user} palindromdu`);
+} else {
+  console.log(`${user} palindrom deyil`);
+}
 
 // 10. *Sıralanmış siyahıda elementin yerini tapın (Binary Search)*
 //     İstifadəçiyə sıralanmış bir siyahı verin və bu siyahıda müəyyən bir elementin yerini binary search algoritmi ilə tapmaq üçün bir funksiyanı yazın
