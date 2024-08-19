@@ -243,7 +243,6 @@
 // 3. *Verilmiş ədədin faktorialını hesablayın*
 //    İstifadəçidən bir ədəd alın və bu ədədin faktorialını hesablayan bir funksiyanı yazın.
 
-// Faktorial hesablayan funksiya
 // let user = parseFloat(prompt("isdediyiniz ededin faktorialini tapin"));
 // let result = 1;
 // if (0 < user) {
@@ -314,16 +313,20 @@
 // 9. *Sözün palindrom olub-olmadığını yoxlayın*
 //    İstifadəçidən bir söz alın və bu sözün palindrom olub-olmadığını yoxlayan bir funksiyanı yazın.
 
-let user = prompt("Sözün palindrom olub-olmadigini yoxla:");
-function isPalindrome(string) {
-  let reversed = user.split("").reverse().join("");
-  return string === reversed;
-}
-if (isPalindrome(user)) {
-  console.log(`${user} palindromdu`);
-} else {
-  console.log(`${user} palindrom deyil`);
-}
+// let user = prompt("Sözün palindrom olub-olmadigini yoxla:");
+// function isPalindrome(string) {
+//   let reversed = user.split("").reverse().join("");
+//   return string === reversed;
+// }
+// if (isPalindrome(user)) {
+//   console.log(`${user} palindromdu`);
+// } else {
+//   console.log(`${user} palindrom deyil`);
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // 10. *Sıralanmış siyahıda elementin yerini tapın (Binary Search)*
 //     İstifadəçiyə sıralanmış bir siyahı verin və bu siyahıda müəyyən bir elementin yerini binary search algoritmi ilə tapmaq üçün bir funksiyanı yazın
+
+// yazammadim ay Muxtar
