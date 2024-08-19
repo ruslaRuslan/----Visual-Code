@@ -260,19 +260,30 @@
 // 4. *Ədədlər siyahısının cəmini tapın*
 //    Verilmiş bir ədəd siyahısının cəmini hesablayan bir funksiyanı yazın.
 
-const ededler = [1, 2, 3, 4, 5];
-function hesablama(siyahi) {
-  return siyahi.reduce((a, b) => a + b);
-}
-console.log(hesablama(ededler));
+// const ededler = [1, 2, 3, 4, 5];
+// function hesablama(siyahi) {
+//   return siyahi.reduce((a, b) => a + b);
+// }
+// console.log(hesablama(ededler));
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 5. *Sətirdəki samit hərfləri sayın*
 //    İstifadəçidən bir sətir alın və bu sətirdə neçə samit hərf olduğunu sayan bir funksiyanı yazın.
 
+// bos, alinmadi ay Muxtar
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // 6. *Ədədi çevirmək (reverse) və tərsinə yazdırmaq*
 //    İstifadəçidən bir ədəd alın və bu ədədin rəqəmlərini tərsinə çevirərək ekrana yazdıran bir funksiyanı yazın.
+
+let user = prompt(
+  "isdediyiniz ededi yazin ve onun reqemlerinin tersini gorun!"
+);
+let tersEded = user.split("").reverse().join("");
+console.log(tersEded);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // 7. *Sətirdəki hərflərin sırasını dəyişdirin*
 //    Verilmiş bir sətirin hərflərini tərsinə çevirən bir funksiyanı yazın.
