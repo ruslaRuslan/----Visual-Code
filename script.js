@@ -553,16 +553,16 @@
 
 // 12. Istifadeciden soz alin. Eger daxil etdiyi soz "user"-e beraber olsa console-a "xos geldin istifadeci", sozu cixsin. "admin" olsa "xos geldin cenab admin", "guest" olsa "xos geldin qonaq"
 
-let user = prompt("user ,admin ve ya guest yaz");
-if (user === "user") {
-  console.log("xos geldin istifadeci");
-} else if (user === "cenab") {
-  console.log("xos geldin cenab admin");
-} else if (user === "guest") {
-  console.log("xos geldin qonaq");
-} else {
-  console.log("user ,admin ve ya guest yaz!! (elave hecne yazma!!!)");
-}
+// let user = prompt("user ,admin ve ya guest yaz");
+// if (user === "user") {
+//   console.log("xos geldin istifadeci");
+// } else if (user === "cenab") {
+//   console.log("xos geldin cenab admin");
+// } else if (user === "guest") {
+//   console.log("xos geldin qonaq");
+// } else {
+//   console.log("user ,admin ve ya guest yaz!! (elave hecne yazma!!!)");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
