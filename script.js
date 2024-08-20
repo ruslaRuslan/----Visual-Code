@@ -270,7 +270,7 @@
 // 5. *Sətirdəki samit hərfləri sayın*
 //    İstifadəçidən bir sətir alın və bu sətirdə neçə samit hərf olduğunu sayan bir funksiyanı yazın.
 
-// bos, alinmadi ay Muxtar
+// bos, alinmadi
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 6. *Ədədi çevirmək (reverse) və tərsinə yazdırmaq*
@@ -298,7 +298,7 @@
 //   let tersEded = user.split("").reverse().join("");
 //   console.log(tersEded);
 // } else {
-//   console.log("ancax string yaz (ayri hecne yazma)!!");
+//   console.log("ancaq string yaz (ayri hecne yazma)!!");
 // }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -306,17 +306,17 @@
 // 8. *Fibonacci seriyasını yaratmaq*
 //    İstifadəçidən neçə elementli bir Fibonacci seriyası yaratmaq istədiyini soruşun və bu seriyanı yaradan bir funksiyanı yazın.
 
-// alinmadi ay Muxtar
+// alinmadi
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 9. *Sözün palindrom olub-olmadığını yoxlayın*
 //    İstifadəçidən bir söz alın və bu sözün palindrom olub-olmadığını yoxlayan bir funksiyanı yazın.
 
-// let user = prompt("Sözün palindrom olub-olmadigini yoxla:");
+// let user = prompt("Sözün palindrom olub-olmadığını yoxlayın");
 // function isPalindrome(string) {
 //   let reversed = user.split("").reverse().join("");
-//   return string === reversed;
+//   return reversed === string;
 // }
 // if (isPalindrome(user)) {
 //   console.log(`${user} palindromdu`);
@@ -329,6 +329,30 @@
 // 10. *Sıralanmış siyahıda elementin yerini tapın (Binary Search)*
 //     İstifadəçiyə sıralanmış bir siyahı verin və bu siyahıda müəyyən bir elementin yerini binary search algoritmi ilə tapmaq üçün bir funksiyanı yazın
 
-// yazammadim ay Muxtar
+// alinmadi
 
-// ---------------------------------------------------------------------------------------------------------------------------------
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// 1. area_of_rectangle
+// User will enter the sides of rectangle: width and length. Create variables and assign these to variables. Later, calculate the area of the rectangle and alert it
+
+// Istifadeci duzbucagin tereflerini daxil edecek: en ve uzunluq. Deyisenler yaradin ve bunlari hemin deyisenlere menimsedin. Daha sonra saheni hesablayin ve istifadeciye gosterin.
+
+// 2. age_calculator
+// User will enter his/her birth date. Find his/her age and alert it.
+
+// Istifadeci oz dogum ilini daxil edecek. Onun yasini tap ve goster.
+
+let user = prompt("dogum ilinizi yazin");
+let = date = new Date().getFullYear();
+let result = date - user;
+if (user >= 1900) {
+  console.log(` sizin ${result} yasiniz var`);
+} else {
+  console.log(
+    `${result} yasin olmasi mumkun deyil xais olunur dogum ilinizi duzgun teyin edesiz`
+  );
+}
+
+// 3.km to mil
+// Kilometr deyerini mil'e cevirin,  1km 0,6214 mile beraberdir.User'den kilometr deyerini alin ve alert ile mil deyerini gosterin.
