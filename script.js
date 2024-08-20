@@ -568,6 +568,18 @@
 
 // 13. FizzBuzz taski
 
+let fizz = prompt("Fizz");
+let buzz = prompt("Buzz");
+let result = "";
+if (fizz === "fizz" || fizz === "Fizz") {
+  result = fizz;
+}
+
+if (buzz === "buzz" || buzz === "Buzz") {
+  result += buzz;
+}
+console.log(result);
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 14. Istifadeciden eded alin. Eger eded 2 reqemlidirse, console-a "eded ikireqemlidir" cixsin.
