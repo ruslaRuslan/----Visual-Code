@@ -409,13 +409,19 @@
 
 /*6#### JavaScript-də ədədin kvadrat kökünü tapmaq üçün proqram yazın */
 
-let user = parseFloat(prompt("eded ve ya reqem yaz"));
-let result = Math.sqrt(user);
-console.log(result);
+// let user = parseFloat(prompt("eded ve ya reqem yaz"));
+// let result = Math.sqrt(user);
+// console.log(result);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 /* 7### Selsi dəyərini Fahrenheit-ə çevirin. Düstur: fahrenheit = celsius * 1.8 + 32*/
+
+let celsius = parseFloat(prompt("celsius yaz (isdediyin eded ve reqemi yaz)"));
+
+let fahrenheit = celsius * 1.8 + 32;
+
+console.log(`${celsius}°C= ${fahrenheit}°F `);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
