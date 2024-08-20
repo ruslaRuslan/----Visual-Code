@@ -568,21 +568,30 @@
 
 // 13. FizzBuzz taski
 
-let fizz = prompt("Fizz");
-let buzz = prompt("Buzz");
-let result = "";
-if (fizz === "fizz" || fizz === "Fizz") {
-  result = fizz;
-}
+// let fizz = prompt("Fizz");
+// let buzz = prompt("Buzz");
 
-if (buzz === "buzz" || buzz === "Buzz") {
-  result += buzz;
-}
-console.log(result);
+// let result = "";
+// if (fizz === "fizz" || fizz === "Fizz") {
+//   result = fizz;
+// }
+
+// if (buzz === "buzz" || buzz === "Buzz") {
+//   result += buzz;
+// }
+// console.log(result);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 14. Istifadeciden eded alin. Eger eded 2 reqemlidirse, console-a "eded ikireqemlidir" cixsin.
+
+let user = parseFloat(prompt("iki reqemli eded yaz"));
+
+if (user > 9 && user <= 99) {
+  console.log("eded ikireqemlidir");
+} else {
+  console.log("iki ededli reqemler yaz!!!!! (elave hecne yazma)");
+}
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
