@@ -350,11 +350,11 @@
 
 // Istifadeci duzbucagin tereflerini daxil edecek: en ve uzunluq. Deyisenler yaradin ve bunlari hemin deyisenlere menimsedin. Daha sonra saheni hesablayin ve istifadeciye gosterin.
 
-let en = parseFloat(prompt("enini teyin edin"));
-let uzunluq = parseFloat(prompt("uzunluqu teyin edin"));
+// let en = parseFloat(prompt("enini teyin edin"));
+// let uzunluq = parseFloat(prompt("uzunluqu teyin edin"));
 
-let result = en + uzunluq;
-console.log(`en: ${en} uzunluq:${uzunluq} umumi sahe: ${result}`);
+// let result = en + uzunluq;
+// console.log(`en: ${en} uzunluq:${uzunluq} umumi sahe: ${result}`);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -382,3 +382,24 @@ console.log(`en: ${en} uzunluq:${uzunluq} umumi sahe: ${result}`);
 // let user = parseInt(prompt("isdediyiniz km-in ml-sini oyrenin"));
 // let result = user * 0.6214;
 // console.log(`${user} km ${result} ml dir`);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 4. Isitfadeciden adini ve soyadini al, onlari birlesdirib tam shekilde ekrana cixar. (console-a) : meselen,
+// Ali GreenHeart
+
+let name = prompt("adini yaz");
+let surname = prompt("soyadini yaz");
+
+function SurnameLastName(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+SurnameLastName(name);
+SurnameLastName(surname);
+console.log(`${SurnameLastName(name)} ${SurnameLastName(surname)}`);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 5. Istifadecinin adini al ve gozellesdirib ekrana cixarmaq, meselen, Ali   —> ~ ~ Ali ~ ~  , Rza —> ~ ~ Rza ~ ~
+
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
