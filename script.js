@@ -240,16 +240,16 @@
 // }
 // ________________________________
 
-let a = parseFloat(prompt("birinci ededi yaz"));
-let b = parseFloat(prompt("ikinci ededi yaz"));
-let c = parseFloat(prompt("ucuncu ededi yaz"));
+// let a = parseFloat(prompt("birinci ededi yaz"));
+// let b = parseFloat(prompt("ikinci ededi yaz"));
+// let c = parseFloat(prompt("ucuncu ededi yaz"));
 
-let result = Math.max(a, b, c);
-if ((a !== b && a !== c) || (b !== a && b !== c) || (c !== b && c !== a)) {
-  console.log(result);
-} else {
-  console.log("hamsi beraberdir");
-}
+// let result = Math.max(a, b, c);
+// if ((a !== b && a !== c) || (b !== a && b !== c) || (c !== b && c !== a)) {
+//   console.log(result);
+// } else {
+//   console.log("hamsi beraberdir");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 // 3. *Verilmiş ədədin faktorialını hesablayın*
@@ -350,6 +350,12 @@ if ((a !== b && a !== c) || (b !== a && b !== c) || (c !== b && c !== a)) {
 
 // Istifadeci duzbucagin tereflerini daxil edecek: en ve uzunluq. Deyisenler yaradin ve bunlari hemin deyisenlere menimsedin. Daha sonra saheni hesablayin ve istifadeciye gosterin.
 
+let en = parseFloat(prompt("enini teyin edin"));
+let uzunluq = parseFloat(prompt("uzunluqu teyin edin"));
+
+let result = en + uzunluq;
+console.log(`en: ${en} uzunluq:${uzunluq} umumi sahe: ${result}`);
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 2. age_calculator
@@ -372,3 +378,7 @@ if ((a !== b && a !== c) || (b !== a && b !== c) || (c !== b && c !== a)) {
 
 // 3.km to mil
 // Kilometr deyerini mil'e cevirin,  1km 0,6214 mile beraberdir.User'den kilometr deyerini alin ve alert ile mil deyerini gosterin.
+
+// let user = parseInt(prompt("isdediyiniz km-in ml-sini oyrenin"));
+// let result = user * 0.6214;
+// console.log(`${user} km ${result} ml dir`);
