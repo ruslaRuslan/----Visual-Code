@@ -635,16 +635,16 @@
 
 // 18. 1-den verilen edede qeder olan ededlerin cemi.
 
-let user = parseFloat(prompt("eded daxil et"));
-let result = 0;
-if (1 <= user) {
-  for (let i = 0; i <= user; i++) {
-    result += i;
-  }
-  console.log(result);
-} else {
-  console.log("1-den yaz !!!(elave hecne yazma!!)");
-}
+// let user = parseFloat(prompt("eded daxil et"));
+// let result = 0;
+// if (1 <= user) {
+//   for (let i = 0; i <= user; i++) {
+//     result += i;
+//   }
+//   console.log(result);
+// } else {
+//   console.log("1-den yaz !!!(elave hecne yazma!!)");
+// }
 
 // -------------------------------------------------------------------------------------------------------------------
 // 19. ekranda bu formada sekil cekin
@@ -652,6 +652,10 @@ if (1 <= user) {
 // ***
 // **
 // *
+
+for (let i = 4; i >= 0; i--) {
+  console.log("*".repeat(i));
+}
 // ----------------------------------------------------------------------------------------------
 
 // 20.  1-den verilen edede qeder ededlerin hasili -=>  faktorial (5!= 1*2*3*4*5)
