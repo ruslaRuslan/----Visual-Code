@@ -596,15 +596,29 @@
 
 // 15. Istifadeciden eded alin. Eger eded hem 2ye ve hem de 5e bolunerse, console-a "bu istediyim ededdir" cixsin.
 
-let user = parseFloat(prompt("2-ye ve 5-e bolunen yaz"));
-if (user % 2 === 0 && user % 5 === 0) {
-  console.log(`${user} bu istediyim ededdir`);
-} else {
-  console.log("2-ye ve 5-e bolunen yaz!!!!! (elave hecne yazma)");
-}
+// let user = parseFloat(prompt("2-ye ve 5-e bolunen yaz"));
+// if (user % 2 === 0 && user % 5 === 0) {
+//   console.log(`${user} bu istediyim ededdir`);
+// } else {
+//   console.log("2-ye ve 5-e bolunen yaz!!!!! (elave hecne yazma)");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 16. 3 eded daxil edin. Onlarin cemi eger 100-den cox olarsa, console-a "cemleri kecdi 100u" cixsin.
+
+let num1 = parseFloat(prompt("birinci eded"));
+let num2 = parseFloat(prompt("ikinci eded"));
+let num3 = parseFloat(prompt("ucuncu eded"));
+
+function Cem() {
+  let result = num1 + num2 + num3;
+  return result;
+}
+if (Cem() > 100) {
+  console.log("cemleri kecdi 100-u");
+} else {
+  console.log(Cem());
+}
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
