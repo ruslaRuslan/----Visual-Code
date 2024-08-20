@@ -427,20 +427,34 @@
 
 /* 8### Istifadəçinin daxil etdiyi nömrənin müsbət, mənfi və ya sıfır olduğunu təyin edin və göstərin(console.log)(if...else istifadə edin) */
 
-let user = parseFloat(prompt("eded teyin edin"));
-if (user === 0) {
-  console.log(`isdifadeci ${user} teyin etdi`);
-} else if (user < 0) {
-  console.log(`${user} menfi edetdir`);
-} else if (user > 0) {
-  console.log(`${user} musbet edetdir`);
-} else {
-  console.log("xais olunur eded ve ya reqem yazin (elave nese yazmayin!)");
-}
+// let user = parseFloat(prompt("eded teyin edin"));
+// if (user === 0) {
+//   console.log(`isdifadeci ${user} teyin etdi`);
+// } else if (user < 0) {
+//   console.log(`${user} menfi edetdir`);
+// } else if (user > 0) {
+//   console.log(`${user} musbet edetdir`);
+// } else {
+//   console.log("xais olunur eded ve ya reqem yazin (elave nese yazmayin!)");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-/* 9### Rəqəmin tək və ya cüt olduğunu yoxlamaq üçün JavaScript proqramı yazın.(if...else istifadə edin)*/
+/* 9### Rəqəmin tək və ya cüt olduğunu yoxlamaq üçün JavaScript proqramı yazın.*/
+
+// let user = parseFloat(prompt("tek ve ya cut eded yaz"));
+// // cox qisa yol ile
+// let result = user % 2 === 0 ? `${user} cut eddetdir` : `${user} tek eddetdir`;
+// console.log(result);
+// ____________________________-
+// if else ile
+
+let user = parseFloat(prompt("tek ve ya cut eded yaz"));
+if (user % 2 === 0) {
+  console.log(`${user} cut eddetdir`);
+} else if (user % 2 !== 0) {
+  console.log(`${user} tek eddetdir`);
+}
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
