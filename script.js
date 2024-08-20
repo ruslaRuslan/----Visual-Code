@@ -449,18 +449,103 @@
 // ____________________________-
 // if else ile
 
-let user = parseFloat(prompt("tek ve ya cut eded yaz"));
-if (user % 2 === 0) {
-  console.log(`${user} cut eddetdir`);
-} else if (user % 2 !== 0) {
-  console.log(`${user} tek eddetdir`);
-}
+// let user = parseFloat(prompt("tek ve ya cut eded yaz"));
+// if (user % 2 === 0) {
+//   console.log(`${user} cut eddetdir`);
+// } else if (user % 2 !== 0) {
+//   console.log(`${user} tek eddetdir`);
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 /* 10### JavaScript-də üç ədəd arasında ən böyüyü tapın.(Həm if else həm də Math.max() )*/
+
+// if else ile
+
+// let a = parseFloat(prompt("birinci eded"));
+// let b = parseFloat(prompt("ikinci eded"));
+// let c = parseFloat(prompt("ucuncu eded"));
+
+// if (a > b && c < a) {
+//   console.log(
+//     ` birinci-ci yazilan ${a} boyukdu ne ki ikinci yazilan ${b} ve ucuncu yazilan ${c}`
+//   );
+// } else if (b > a && c < b) {
+//   console.log(
+//     ` ikinci-ci yazilan ${b} boyukdu ne ki birinci-ci yazilan ${a} ve ucuncu yazilan ${c} `
+//   );
+// } else if (c > a && b < c) {
+//   console.log(
+//     `ucuncu yazilan ${c} boyukdu ne ki birinci yazilan ${a} ve ikinci yazilan ${b}`
+//   );
+// } else if (a === b && a === c && b === c) {
+//   console.log(`${b} hamsi beraberdi`);
+// } else {
+//   console.log(
+//     "xais olunur eded ve ya reqem yaz (bos buraxma ve elave nese yazma!)"
+//   );
+// }
+
+// _______________________________
+
+// Math.max() - ile
+
+// let a = parseFloat(prompt("birinci eded"));
+// let b = parseFloat(prompt("ikinci eded"));
+// let c = parseFloat(prompt("ucuncu eded"));
+
+// let result = Math.max(a, b, c);
+// console.log(`${result} boyukdu digerlerinnen `);
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 /* 11### JavaScript-də sadə kalkulyator hazırlayın.(if else və switch case istifadə edin). ( 2 eded ve 1 operatoru (+, -) prompt-la alin). Sonra yoxlayin, operator +dursa, cemini ekrana cixarin ve s. */
 
+// switch - ile
+// function calculate() {
+//   let num = parseFloat(prompt("birinci reqemi teyin edin"));
+//   let operator = prompt("+, -, *, / operator yaz");
+//   let num2 = parseFloat(prompt("ikinci reqemi teyin edin"));
+//   let result;
+//   switch (operator) {
+//     case "+":
+//       result = num + num2;
+//       break;
+//     case "-":
+//       result = num - num2;
+//       break;
+//     case "*":
+//       result = num * num2;
+//       break;
+//     case "/":
+//       result = num / num2;
+//       break;
+//     default:
+//       console.log("xais olunur duz yazin!!");
+//   }
+//   console.log(`cavap: ${result}`);
+// }
+// calculate();
+// ___________________________
+
+// if - ile
+function calculate() {
+  let num = parseFloat(prompt("birinci reqemi teyin edin"));
+  let operator = prompt("+, -, *, / operator yaz");
+  let num2 = parseFloat(prompt("ikinci reqemi teyin edin"));
+  let result;
+  if (operator == "+") {
+    result = num + num2;
+  } else if (operator == "-") {
+    result = num - num2;
+  } else if (operator == "*") {
+    result = num * num2;
+  } else if (operator == "/") {
+    result = num / num2;
+  } else {
+    console.log("Yalnish (xais olunur duz yazin!!)");
+  }
+  console.log(`cavap: ${result}`);
+}
+calculate();
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
