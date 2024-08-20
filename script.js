@@ -238,6 +238,18 @@
 //     "xais olunur 3 ferqli eded yazin! (elave nese yazmayin ve xanalari bos buraxmayin!)"
 //   );
 // }
+// ________________________________
+
+let a = parseFloat(prompt("birinci ededi yaz"));
+let b = parseFloat(prompt("ikinci ededi yaz"));
+let c = parseFloat(prompt("ucuncu ededi yaz"));
+
+let result = Math.max(a, b, c);
+if ((a !== b && a !== c) || (b !== a && b !== c) || (c !== b && c !== a)) {
+  console.log(result);
+} else {
+  console.log("hamsi beraberdir");
+}
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 // 3. *Verilmiş ədədin faktorialını hesablayın*
@@ -338,21 +350,25 @@
 
 // Istifadeci duzbucagin tereflerini daxil edecek: en ve uzunluq. Deyisenler yaradin ve bunlari hemin deyisenlere menimsedin. Daha sonra saheni hesablayin ve istifadeciye gosterin.
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // 2. age_calculator
 // User will enter his/her birth date. Find his/her age and alert it.
 
 // Istifadeci oz dogum ilini daxil edecek. Onun yasini tap ve goster.
 
-let user = prompt("dogum ilinizi yazin");
-let = date = new Date().getFullYear();
-let result = date - user;
-if (user >= 1900) {
-  console.log(` sizin ${result} yasiniz var`);
-} else {
-  console.log(
-    `${result} yasin olmasi mumkun deyil xais olunur dogum ilinizi duzgun teyin edesiz`
-  );
-}
+// let user = prompt("dogum ilinizi yazin");
+// let = date = new Date().getFullYear();
+// let result = date - user;
+// if (user >= 1900) {
+//   console.log(` sizin ${result} yasiniz var`);
+// } else {
+//   console.log(
+//     `${result} yasin olmasi mumkun deyil xais olunur dogum ilinizi duzgun teyin edesiz`
+//   );
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // 3.km to mil
 // Kilometr deyerini mil'e cevirin,  1km 0,6214 mile beraberdir.User'den kilometr deyerini alin ve alert ile mil deyerini gosterin.
