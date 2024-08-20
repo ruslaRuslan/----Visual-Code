@@ -388,18 +388,21 @@
 // 4. Isitfadeciden adini ve soyadini al, onlari birlesdirib tam shekilde ekrana cixar. (console-a) : meselen,
 // Ali GreenHeart
 
-let name = prompt("adini yaz");
-let surname = prompt("soyadini yaz");
+// let name = prompt("adini yaz");
+// let surname = prompt("soyadini yaz");
 
-function SurnameLastName(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
-SurnameLastName(name);
-SurnameLastName(surname);
-console.log(`${SurnameLastName(name)} ${SurnameLastName(surname)}`);
+// function SurnameLastName(string) {
+//   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+// }
+// SurnameLastName(name);
+// SurnameLastName(surname);
+// console.log(`${SurnameLastName(name)} ${SurnameLastName(surname)}`);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 5. Istifadecinin adini al ve gozellesdirib ekrana cixarmaq, meselen, Ali   —> ~ ~ Ali ~ ~  , Rza —> ~ ~ Rza ~ ~
+
+let name = prompt("adini yaz");
+console.log(` ~~💕 ${name} 💕~~ `);
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
