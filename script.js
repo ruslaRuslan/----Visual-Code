@@ -417,15 +417,27 @@
 
 /* 7### Selsi dəyərini Fahrenheit-ə çevirin. Düstur: fahrenheit = celsius * 1.8 + 32*/
 
-let celsius = parseFloat(prompt("celsius yaz (isdediyin eded ve reqemi yaz)"));
+// let celsius = parseFloat(prompt("celsius yaz (isdediyin eded ve reqemi yaz)"));
 
-let fahrenheit = celsius * 1.8 + 32;
+// let fahrenheit = celsius * 1.8 + 32;
 
-console.log(`${celsius}°C= ${fahrenheit}°F `);
+// console.log(`${celsius}°C= ${fahrenheit}°F `);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 /* 8### Istifadəçinin daxil etdiyi nömrənin müsbət, mənfi və ya sıfır olduğunu təyin edin və göstərin(console.log)(if...else istifadə edin) */
+
+let user = parseFloat(prompt("eded teyin edin"));
+if (user === 0) {
+  console.log(`isdifadeci ${user} teyin etdi`);
+} else if (user < 0) {
+  console.log(`${user} menfi edetdir`);
+} else if (user > 0) {
+  console.log(`${user} musbet edetdir`);
+} else {
+  console.log("xais olunur eded ve ya reqem yazin (elave nese yazmayin!)");
+}
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 /* 9### Rəqəmin tək və ya cüt olduğunu yoxlamaq üçün JavaScript proqramı yazın.(if...else istifadə edin)*/
