@@ -585,17 +585,23 @@
 
 // 14. Istifadeciden eded alin. Eger eded 2 reqemlidirse, console-a "eded ikireqemlidir" cixsin.
 
-let user = parseFloat(prompt("iki reqemli eded yaz"));
-
-if (user > 9 && user <= 99) {
-  console.log("eded ikireqemlidir");
-} else {
-  console.log("iki ededli reqemler yaz!!!!! (elave hecne yazma)");
-}
+// let user = parseFloat(prompt("iki reqemli eded yaz"));
+// if (user > 9 && user <= 99) {
+//   console.log("eded ikireqemlidir");
+// } else {
+//   console.log("iki ededli reqemler yaz!!!!! (elave hecne yazma)");
+// }
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 15. Istifadeciden eded alin. Eger eded hem 2ye ve hem de 5e bolunerse, console-a "bu istediyim ededdir" cixsin.
+
+let user = parseFloat(prompt("2-ye ve 5-e bolunen yaz"));
+if (user % 2 === 0 && user % 5 === 0) {
+  console.log(`${user} bu istediyim ededdir`);
+} else {
+  console.log("2-ye ve 5-e bolunen yaz!!!!! (elave hecne yazma)");
+}
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
