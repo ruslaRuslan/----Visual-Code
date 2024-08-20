@@ -607,18 +607,53 @@
 
 // 16. 3 eded daxil edin. Onlarin cemi eger 100-den cox olarsa, console-a "cemleri kecdi 100u" cixsin.
 
-let num1 = parseFloat(prompt("birinci eded"));
-let num2 = parseFloat(prompt("ikinci eded"));
-let num3 = parseFloat(prompt("ucuncu eded"));
+// let num1 = parseFloat(prompt("birinci eded"));
+// let num2 = parseFloat(prompt("ikinci eded"));
+// let num3 = parseFloat(prompt("ucuncu eded"));
 
-function Cem() {
-  let result = num1 + num2 + num3;
-  return result;
-}
-if (Cem() > 100) {
-  console.log("cemleri kecdi 100-u");
+// function Cem() {
+//   let result = num1 + num2 + num3;
+//   return result;
+// }
+// if (Cem() > 100) {
+//   console.log("cemleri kecdi 100-u");
+// } else {
+//   console.log(Cem());
+// }
+
+// -------------------------------------------------------------------------------------------------------------------
+
+//17. Ureyimde bir reqem tutmusam 0-dan 50ye qeder. User her defesinde hemin ededi sorusun. Eger sehvdirse, yeniden sorussun. Duz olanda, kapital bank hesabinda 1000 manat kocurulsun console-a cixarin.
+// *ADVANCED*: nece defeye tapdi, onu da cixarin. Tutaq ki,  ehsen, 10 defeye tapdin.
+// *ADVANCED ADVANCED* :
+//  eger addimin sayi 1 olanda olsun 1000 manat
+//  eger addimlarin sayi 2,3,4,5 olarsa  olsun 750 manat
+//  eger addimlarin sayi 6,7,8,9 olarsa  olsun 250 manat
+//  eger addimlarin sayi 10+ olarsa  olsun -250 manat  (ozu bize pul versin)
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// 18. 1-den verilen edede qeder olan ededlerin cemi.
+
+let user = parseFloat(prompt("eded daxil et"));
+let result = 0;
+if (1 <= user) {
+  for (let i = 0; i <= user; i++) {
+    result += i;
+  }
+  console.log(result);
 } else {
-  console.log(Cem());
+  console.log("1-den yaz !!!(elave hecne yazma!!)");
 }
+
+// -------------------------------------------------------------------------------------------------------------------
+// 19. ekranda bu formada sekil cekin
+// ****
+// ***
+// **
+// *
+// ----------------------------------------------------------------------------------------------
+
+// 20.  1-den verilen edede qeder ededlerin hasili -=>  faktorial (5!= 1*2*3*4*5)
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
