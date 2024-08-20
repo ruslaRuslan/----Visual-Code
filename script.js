@@ -529,23 +529,55 @@
 // ___________________________
 
 // if - ile
-function calculate() {
-  let num = parseFloat(prompt("birinci reqemi teyin edin"));
-  let operator = prompt("+, -, *, / operator yaz");
-  let num2 = parseFloat(prompt("ikinci reqemi teyin edin"));
-  let result;
-  if (operator == "+") {
-    result = num + num2;
-  } else if (operator == "-") {
-    result = num - num2;
-  } else if (operator == "*") {
-    result = num * num2;
-  } else if (operator == "/") {
-    result = num / num2;
-  } else {
-    console.log("Yalnish (xais olunur duz yazin!!)");
-  }
-  console.log(`cavap: ${result}`);
+// function calculate() {
+//   let num = parseFloat(prompt("birinci reqemi teyin edin"));
+//   let operator = prompt("+, -, *, / operator yaz");
+//   let num2 = parseFloat(prompt("ikinci reqemi teyin edin"));
+//   let result;
+//   if (operator == "+") {
+//     result = num + num2;
+//   } else if (operator == "-") {
+//     result = num - num2;
+//   } else if (operator == "*") {
+//     result = num * num2;
+//   } else if (operator == "/") {
+//     result = num / num2;
+//   } else {
+//     console.log("Yalnish (xais olunur duz yazin!!)");
+//   }
+//   console.log(`cavap: ${result}`);
+// }
+// calculate();
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 12. Istifadeciden soz alin. Eger daxil etdiyi soz "user"-e beraber olsa console-a "xos geldin istifadeci", sozu cixsin. "admin" olsa "xos geldin cenab admin", "guest" olsa "xos geldin qonaq"
+
+let user = prompt("user ,admin ve ya guest yaz");
+if (user === "user") {
+  console.log("xos geldin istifadeci");
+} else if (user === "cenab") {
+  console.log("xos geldin cenab admin");
+} else if (user === "guest") {
+  console.log("xos geldin qonaq");
+} else {
+  console.log("user ,admin ve ya guest yaz!! (elave hecne yazma!!!)");
 }
-calculate();
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 13. FizzBuzz taski
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 14. Istifadeciden eded alin. Eger eded 2 reqemlidirse, console-a "eded ikireqemlidir" cixsin.
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 15. Istifadeciden eded alin. Eger eded hem 2ye ve hem de 5e bolunerse, console-a "bu istediyim ededdir" cixsin.
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 16. 3 eded daxil edin. Onlarin cemi eger 100-den cox olarsa, console-a "cemleri kecdi 100u" cixsin.
+
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
