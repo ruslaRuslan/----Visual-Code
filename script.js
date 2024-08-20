@@ -402,7 +402,33 @@
 
 // 5. Istifadecinin adini al ve gozellesdirib ekrana cixarmaq, meselen, Ali   —> ~ ~ Ali ~ ~  , Rza —> ~ ~ Rza ~ ~
 
-let name = prompt("adini yaz");
-console.log(` ~~💕 ${name} 💕~~ `);
+// let name = prompt("adini yaz");
+// console.log(` ~~💕 ${name} 💕~~ `);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/*6#### JavaScript-də ədədin kvadrat kökünü tapmaq üçün proqram yazın */
+
+let user = parseFloat(prompt("eded ve ya reqem yaz"));
+let result = Math.sqrt(user);
+console.log(result);
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/* 7### Selsi dəyərini Fahrenheit-ə çevirin. Düstur: fahrenheit = celsius * 1.8 + 32*/
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/* 8### Istifadəçinin daxil etdiyi nömrənin müsbət, mənfi və ya sıfır olduğunu təyin edin və göstərin(console.log)(if...else istifadə edin) */
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/* 9### Rəqəmin tək və ya cüt olduğunu yoxlamaq üçün JavaScript proqramı yazın.(if...else istifadə edin)*/
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/* 10### JavaScript-də üç ədəd arasında ən böyüyü tapın.(Həm if else həm də Math.max() )*/
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+/* 11### JavaScript-də sadə kalkulyator hazırlayın.(if else və switch case istifadə edin). ( 2 eded ve 1 operatoru (+, -) prompt-la alin). Sonra yoxlayin, operator +dursa, cemini ekrana cixarin ve s. */
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
