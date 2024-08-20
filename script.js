@@ -653,11 +653,31 @@
 // **
 // *
 
-for (let i = 4; i >= 0; i--) {
-  console.log("*".repeat(i));
-}
+// for (let i = 4; i >= 0; i--) {
+//   console.log("*".repeat(i));
+// }
 // ----------------------------------------------------------------------------------------------
 
 // 20.  1-den verilen edede qeder ededlerin hasili -=>  faktorial (5!= 1*2*3*4*5)
+
+// promptla
+// let user = parseFloat(
+//   prompt("isdediyin ededin ve ya reqemin faktorialini tap")
+// );
+// let result = 1;
+// if (Number(user)) {
+//   for (let i = 1; i <= user; i++) {
+//     result *= i;
+//   }
+//   console.log(result);
+// } else {
+//   console.log("eded ve ya reqem yaz (elave nese yazma!!)");
+// }
+// ____________________
+// massiv-ile
+
+// let array = [1, 2, 3, 4];
+// let result = array.reduce((a, b) => a * b);
+// console.log(result);
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
