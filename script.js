@@ -828,10 +828,19 @@
 
 // 7. Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
 
-for (let i = 10; i <= 99; i++) {
-  if (i % 2 !== 0) {
-    console.log(i);
-  }
-}
+// for (let i = 10; i <= 99; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
 
 // 8. İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın. Meselen, 50-ye hansi ucreqemli ededler bolunur?: 100, 150, 200, 250, ...
+
+// let user = parseFloat(prompt("isdediyiniz ededi yazin"));
+// let result = 0;
+// for (let i = 100; i <= 999; i++) {
+//   if (i % user === 0) {
+//     console.log((result += i));
+//   }
+// }
+// console.log("imumi cem:" + result); // bunu yazsaqda olar yazmasaqda. (amma yuxaridakiler sertdi!)
