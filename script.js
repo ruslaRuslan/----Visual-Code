@@ -746,30 +746,49 @@
 // ----------------------------------------------------------------------------------------------
 // 2. Sade funksiyalar yaradin. Calculator-a aid. (sum, multiply, divide, sqrt, subtract)
 
-const Sum = (a, b) => {
-  return a + b;
-};
-const Multiply = (a, b) => {
-  return a * b;
-};
-const Divide = (a, b) => {
-  if (a === 0 || b === 0) {
-    console.log("0-a bolunen ve 0-a bolen olmur! xais olunur duz yaz");
-  } else {
-    return a / b;
-  }
-};
-const Subtract = (a, b) => {
-  return a - b;
-};
-const Sqrt = (a, b) => {
-  return Math.sqrt(a, b);
-};
+// const Sum = (a, b) => {
+//   return a + b;
+// };
+// const Multiply = (a, b) => {
+//   return a * b;
+// };
+// const Divide = (a, b) => {
+//   if (a === 0 || b === 0) {
+//     console.log("0-a bolunen ve 0-a bolen olmur! xais olunur duz yaz");
+//   } else {
+//     return a / b;
+//   }
+// };
+// const Subtract = (a, b) => {
+//   return a - b;
+// };
+// const Sqrt = (a, b) => {
+//   return Math.sqrt(a, b);
+// };
 
-console.log(Sum(6, 3));
-console.log(Subtract(6, 3));
-console.log(Multiply(6, 3));
-console.log(Divide(6, 3));
-console.log(Sqrt(16));
+// console.log(Sum(6, 3));
+// console.log(Subtract(6, 3));
+// console.log(Multiply(6, 3));
+// console.log(Divide(6, 3));
+// console.log(Sqrt(16));
 
 // ----------------------------------------------------------------------------------------------
+
+// 3. logGreeting() adında funksiya tərtib edin hansıki konsola «[Adınız] is a JS developer» mesajı çıxarsın.
+let name = prompt("ad daxil edin");
+const logGreeting = (user) => {
+  return user;
+};
+console.log(logGreeting(`${name} is a JS developer`));
+
+// ----------------------------------------------------------------------------------------------
+
+// 4. İstifadəçi adını parametr kimi qəbul edən və konsola «[İstifadəçi adı] is active now» mesajı çıxaran funksiya tərtib edin.
+// Funksiyanı 3 müxtəlif ad üçün çağırın.
+
+// 5. Parametr kimi ədədi qəbul edən və onu dördüncü dərəcə qüvvətə yülsəldərək konsolda göstərən fourth() funksiyasını yazın.
+
+// # Evvelki movzulardan tasklar. Funksiyasiz.
+// 6. Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın. (for ile yazin)
+// 7. Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
+// 8. İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın. Meselen, 50-ye hansi ucreqemli ededler bolunur?: 100, 150, 200, 250, ...
