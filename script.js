@@ -786,25 +786,34 @@
 // 4. İstifadəçi adını parametr kimi qəbul edən və konsola «[İstifadəçi adı] is active now» mesajı çıxaran funksiya tərtib edin.
 // Funksiyanı 3 müxtəlif ad üçün çağırın.
 
-let user = prompt("Ruslan, Ali ve ya Namiq adini yaz elave nese yazma");
+// let user = prompt("Ruslan, Ali ve ya Namiq adini yaz elave nese yazma");
 
-function UserProperty(words) {
-  words = words.charAt(0).toUpperCase() + words.slice(1).toLowerCase();
+// function UserProperty(words) {
+//   words = words.charAt(0).toUpperCase() + words.slice(1).toLowerCase();
 
-  const validNames = ["Ruslan", "Ali", "Namiq"];
+//   const validNames = ["Ruslan", "Ali", "Namiq"];
 
-  if (validNames.includes(words)) {
-    return words;
-  } else {
-    return "Yalnış!!!";
-  }
-}
+//   if (validNames.includes(words)) {
+//     return words;
+//   } else {
+//     return "Yalnış!!!";
+//   }
+// }
 
-console.log(`« ${UserProperty(user)} is active now » `);
+// console.log(`« ${UserProperty(user)} is active now » `);
 
 // ----------------------------------------------------------------------------------------------
 
 // 5. Parametr kimi ədədi qəbul edən və onu dördüncü dərəcə qüvvətə yülsəldərək konsolda göstərən fourth() funksiyasını yazın.
+
+const fourth = (number) => {
+  let result = Math.pow(number, 4);
+  console.log(result);
+  return result;
+};
+fourth(3);
+
+// ----------------------------------------------------------------------------------------------
 
 // # Evvelki movzulardan tasklar. Funksiyasiz.
 // 6. Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın. (for ile yazin)
