@@ -631,6 +631,35 @@
 //  eger addimlarin sayi 6,7,8,9 olarsa  olsun 250 manat
 //  eger addimlarin sayi 10+ olarsa  olsun -250 manat  (ozu bize pul versin)
 
+// let secretNumber = Math.floor(Math.random() * 50) + 1;
+// let attempts = 0;
+// let prize = 0;
+
+// while (true) {
+//   let user = parseInt(prompt("1-den 50-ye qeder reqem yaz"), 10);
+
+//   attempts++;
+
+//   if (user === secretNumber) {
+//     if (attempts === 1) {
+//       prize = 1000;
+//     } else if (attempts <= 5) {
+//       prize = 750;
+//     } else if (attempts <= 9) {
+//       prize = 250;
+//     } else {
+//       prize = -250;
+//       console.log(` 10 cehdi kecdi, ${prize} manat  (ozu bize pul versin).`);
+//     }
+
+//     if (attempts <= 10) {
+//       console.log(`${attempts} cəhddə  ${prize} manat qazandin .`);
+//     }
+//     break;
+//   } else {
+//     alert("Yeniden Cehd!");
+//   }
+// }
 // -------------------------------------------------------------------------------------------------------------------
 
 // 18. 1-den verilen edede qeder olan ededlerin cemi.
@@ -681,3 +710,21 @@
 // console.log(result);
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+//1. user prompt-la 2 eded daxil edecek. Siz, onlarin quvvetini tapacaqsiniz: tutaq ki, 2,5  ---> 2*2*2*2*2=32 ekrana cixmalidir.
+// Diqqet edin ki, sizin ayrica funksiyalariniz olsun. Hem deyiseni prompt-la alib number-e ceviren funksiyaniz, hem hesablayan funksiyaniz ve hem de ekrana cixaran funksiyaniz. Bir sozle calisin funksiyalarla isleyin.
+
+// Funksiya, istifadəçidən daxil edilmiş dəyəri alır və number tipinə çevirir
+
+const getNumber = (propsPrompt) => {
+  return prompt(propsPrompt).split(",").map(Number);
+};
+const calculate = (a, b) => {
+  return Math.pow(a, b);
+};
+const resultD = (result) => {
+  console.log(`cavap: ${result}`);
+};
+const [a, b] = getNumber("2 eded daxil edin");
+const result = calculate(a, b);
+resultD(result);
