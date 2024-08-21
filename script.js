@@ -775,16 +775,34 @@
 // ----------------------------------------------------------------------------------------------
 
 // 3. logGreeting() adında funksiya tərtib edin hansıki konsola «[Adınız] is a JS developer» mesajı çıxarsın.
-let name = prompt("ad daxil edin");
-const logGreeting = (user) => {
-  return user;
-};
-console.log(logGreeting(`${name} is a JS developer`));
+// let name = prompt("ad daxil edin");
+// const logGreeting = (user) => {
+//   return user;
+// };
+// console.log(logGreeting(`${name} is a JS developer`));
 
 // ----------------------------------------------------------------------------------------------
 
 // 4. İstifadəçi adını parametr kimi qəbul edən və konsola «[İstifadəçi adı] is active now» mesajı çıxaran funksiya tərtib edin.
 // Funksiyanı 3 müxtəlif ad üçün çağırın.
+
+let user = prompt("Ruslan, Ali ve ya Namiq adini yaz elave nese yazma");
+
+function UserProperty(words) {
+  words = words.charAt(0).toUpperCase() + words.slice(1).toLowerCase();
+
+  const validNames = ["Ruslan", "Ali", "Namiq"];
+
+  if (validNames.includes(words)) {
+    return words;
+  } else {
+    return "Yalnış!!!";
+  }
+}
+
+console.log(`« ${UserProperty(user)} is active now » `);
+
+// ----------------------------------------------------------------------------------------------
 
 // 5. Parametr kimi ədədi qəbul edən və onu dördüncü dərəcə qüvvətə yülsəldərək konsolda göstərən fourth() funksiyasını yazın.
 
