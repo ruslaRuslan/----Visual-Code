@@ -860,3 +860,27 @@
 // alert(add(5, 3));
 
 // ----------------------------------------------------------------------------------------------
+
+// 10. Bir parametrli funksiya yazın, parametr olaraq cins(K,Q) və ad qəbul etsin.
+// Həmin funksiya geriyə funksiya göndərsin.
+// Geriyə göndərdiyi funksiyada əgər cins qadındırsa qarşısına Xanım, kişidirsə cənab yazılıb, console-a çıxarılsın.
+
+function greet(cins, ad) {
+  return function () {
+    let title;
+    if (cins === "Q") {
+      title = "Xanim";
+    } else if (cins === "K") {
+      title = "Cenab";
+    } else {
+      title = "";
+    }
+    console.log(`${title} ${ad}`);
+  };
+}
+const Qadin = greet("Q", "Ayla");
+Qadin();
+const Kishi = greet("K", "Ruslan");
+Kishi();
+
+// ----------------------------------------------------------------------------------------------
