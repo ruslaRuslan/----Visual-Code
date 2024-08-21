@@ -716,15 +716,60 @@
 
 // Funksiya, istifadəçidən daxil edilmiş dəyəri alır və number tipinə çevirir
 
-const getNumber = (propsPrompt) => {
-  return prompt(propsPrompt).split(",").map(Number);
+// const getNumber = (propsPrompt) => {
+//   return prompt(propsPrompt).split(",").map(Number);
+// };
+// const calculate = (a, b) => {
+//   return Math.pow(a, b);
+// };
+// const resultD = (result) => {
+//   console.log(`cavap: ${result}`);
+// };
+// const [a, b] = getNumber("2 eded daxil edin");
+// const result = calculate(a, b);
+// resultD(result);
+// ____________________
+
+// let num1 = parseFloat(prompt("birinci eded"));
+// let num2 = parseFloat(prompt("ikinci eded"));
+
+// let result = Math.pow(num1, num2);
+// if (num1 !== 0 && num2 !== 0) {
+//   console.log(result);
+// }
+// if (num1 === 0 || num2 === 0) {
+//   console.log(`0-i neye vursan 0 alinir ve neyi 0-a vursan 0 alinir`);
+// } else {
+//   console.log("eded yazin elave hecne yazmayin");
+// }
+
+// ----------------------------------------------------------------------------------------------
+// 2. Sade funksiyalar yaradin. Calculator-a aid. (sum, multiply, divide, sqrt, subtract)
+
+const Sum = (a, b) => {
+  return a + b;
 };
-const calculate = (a, b) => {
-  return Math.pow(a, b);
+const Multiply = (a, b) => {
+  return a * b;
 };
-const resultD = (result) => {
-  console.log(`cavap: ${result}`);
+const Divide = (a, b) => {
+  if (a === 0 || b === 0) {
+    console.log("0-a bolunen ve 0-a bolen olmur! xais olunur duz yaz");
+  } else {
+    return a / b;
+  }
 };
-const [a, b] = getNumber("2 eded daxil edin");
-const result = calculate(a, b);
-resultD(result);
+const Subtract = (a, b) => {
+  return a - b;
+};
+const Sqrt = (a, b) => {
+  return Math.sqrt(a, b);
+};
+
+console.log(Sum(6, 3));
+console.log(Subtract(6, 3));
+console.log(Multiply(6, 3));
+console.log(Divide(6, 3));
+console.log(Sqrt(16));
+
+// ----------------------------------------------------------------------------------------------
