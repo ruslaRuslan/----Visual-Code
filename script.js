@@ -833,6 +833,7 @@
 //     console.log(i);
 //   }
 // }
+// ----------------------------------------------------------------------------------------------
 
 // 8. İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın. Meselen, 50-ye hansi ucreqemli ededler bolunur?: 100, 150, 200, 250, ...
 
@@ -844,3 +845,18 @@
 //   }
 // }
 // console.log("imumi cem:" + result); // bunu yazsaqda olar yazmasaqda. (amma yuxaridakiler sertdi!)
+// ----------------------------------------------------------------------------------------------
+// 9. Bir add funksiyasi yazin. 3 arqument alsin. ilk 2si ededler (eded1 ve eded2) 3cusu ise, funksiya olsun. (callback). men o funksiyaya console.log ve ya alert verib, ozum teyin edim, neticeni alert-de gostersin, yoxsa console-da.
+
+// add(3,5,console.log) //  console-a 8 yazmalidi
+// add(3,5,alert) // alert-e 8 yazmalidi
+
+// add funksiyası təyin edirik
+
+// function add(eded1, eded2) {
+//   return eded1 + eded2;
+// }
+// console.log(add(5, 3));
+// alert(add(5, 3));
+
+// ----------------------------------------------------------------------------------------------
