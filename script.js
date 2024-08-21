@@ -806,16 +806,26 @@
 
 // 5. Parametr kimi ədədi qəbul edən və onu dördüncü dərəcə qüvvətə yülsəldərək konsolda göstərən fourth() funksiyasını yazın.
 
-const fourth = (number) => {
-  let result = Math.pow(number, 4);
-  console.log(result);
-  return result;
-};
-fourth(3);
+// const fourth = (number) => {
+//   let result = Math.pow(number, 4);
+//   console.log(result);
+//   return result;
+// };
+// fourth(3);
 
 // ----------------------------------------------------------------------------------------------
 
 // # Evvelki movzulardan tasklar. Funksiyasiz.
 // 6. Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın. (for ile yazin)
+
+let result = 0;
+for (let i = 100; i <= 999; i++) {
+  if (i % 10 === 0) {
+    console.log((result += i));
+  }
+}
+
+// ----------------------------------------------------------------------------------------------
+
 // 7. Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
 // 8. İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın. Meselen, 50-ye hansi ucreqemli ededler bolunur?: 100, 150, 200, 250, ...
