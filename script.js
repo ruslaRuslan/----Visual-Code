@@ -1104,20 +1104,33 @@
 
 // 12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
 
-const repeatCharV6 = (numbers) => {
-  let result = "";
-  for (let i = 0; i <= numbers; i++) {
-    if (i % 2 !== 0) {
-      result += i;
-    }
-  }
-  console.log(result);
+// const repeatCharV6 = (numbers) => {
+//   let result = "";
+//   for (let i = 0; i <= numbers; i++) {
+//     if (i % 2 !== 0) {
+//       result += i;
+//     }
+//   }
+//   console.log(result);
 
-  return result;
-};
-repeatCharV6(15);
+//   return result;
+// };
+// repeatCharV6(15);
 
 // ----------------------------------------------------------------------------------------------
 
-// Task13: repeatCharV7(20, 6) // 6-12-18
+// 13: repeatCharV7(20, 6) // 6-12-18
 // repeatCharV7(32, 8) // 8-16-24-32
+
+// const repeatCharV7 = (char, count) => {
+//   let result = [];
+//   for (let i = count; i <= char; i += count) {
+//     result.push(i);
+//   }
+//   console.log(result.join("-"));
+//   return result;
+// };
+
+// repeatCharV7(32, 8); // 8-16-24-32
+// repeatCharV7(20, 6); // 6-12-18
+// ----------------------------------------------------------------------------------------------
