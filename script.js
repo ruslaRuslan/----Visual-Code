@@ -1052,7 +1052,7 @@
 
 // ----------------------------------------------------------------------------------------------
 
-// Task9: repeatCharV3('😀', 5) // 5-den 1 vahid az birlesdir 😀😀😀😀
+// 9: repeatCharV3('😀', 5) // 5-den 1 vahid az birlesdir 😀😀😀😀
 
 // const repeatCharV3 = (char, count) => {
 //   let result = "";
@@ -1067,23 +1067,44 @@
 // console.log(repeatCharV3("😀", 5)); // 😀😀😀😀
 // ----------------------------------------------------------------------------------------------
 
-// Task10: repeatCharV4(5) // "012345"
+// 10: repeatCharV4(5) // "012345"
 
-const repeatCharV4 = (numbers) => {
-  let result = "";
-  for (let i = 0; i <= numbers; i++) {
-    result += i;
-  }
-  return result;
-};
-console.log(repeatCharV4(5));
+// const repeatCharV4 = (numbers) => {
+//   let result = "";
+//   for (let i = 0; i <= numbers; i++) {
+//     result += i;
+//   }
+//   console.log(result);
+//   return result;
+// };
+// repeatCharV4(5);  // 012345
+// repeatCharV4(12); // "0123456789101112"
+// repeatCharV4(9); // "0123456789"
 
 // ----------------------------------------------------------------------------------------------
 
-// repeatCharV4(9) // "0123456789"
-// repeatCharV4(12) // "0123456789101112"
-// Task11: repeatCharV5(13) // 024681012  -> verilen edede qeder cut ededleri birlesdir (if/else)
-// Task12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
+// ----------------------------------------------------------------------------------------------
+
+// 11: repeatCharV5(13) // 024681012  -> verilen edede qeder cut ededleri birlesdir (if/else)
+
+const repeatCharV5 = (numbers) => {
+  let result = "";
+  for (let i = 0; i <= numbers; i++) {
+    if (i % 2 === 0) {
+      result += i;
+    }
+  }
+  console.log(result);
+
+  return result;
+};
+repeatCharV5(15);
+
+// ----------------------------------------------------------------------------------------------
+
+// 12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
+
+// ----------------------------------------------------------------------------------------------
 
 // Task13: repeatCharV7(20, 6) // 6-12-18
 // repeatCharV7(32, 8) // 8-16-24-32
