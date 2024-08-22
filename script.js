@@ -1038,17 +1038,17 @@
 
 // 8: repeatCharV2('😀', 10) // 10-u 2ye bol ve o qeder birlesdir 😀😀😀😀😀
 
-const repeatCharV2 = (char, count) => {
-  let result = "";
-  for (let i = 1; i <= count; i++) {
-    if (count % 2 === 0) {
-      let resultD = count / 2;
-      result = char.repeat(resultD);
-    }
-  }
-  return result;
-};
-console.log(repeatCharV2("😀", 10));
+// const repeatCharV2 = (char, count) => {
+//   let result = "";
+//   for (let i = 1; i <= count; i++) {
+//     if (count % 2 === 0) {
+//       let resultD = count / 2;
+//       result = char.repeat(resultD);
+//     }
+//   }
+//   return result;
+// };
+// console.log(repeatCharV2("😀", 10));
 
 // ----------------------------------------------------------------------------------------------
 
