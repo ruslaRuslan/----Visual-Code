@@ -1013,3 +1013,11 @@
 
 // 6: repeatChar('a',5) // aaaaa
 // verdiyim simvolu eded qeder tekrarlayib birlesdir
+
+// const repeatChar = (char, repeat) => {
+//   let result = char.repeat(repeat);
+//   console.log(result);
+//   return result;
+// };
+// repeatChar("a", 5);
+// ----------------------------------------------------------------------------------------------
