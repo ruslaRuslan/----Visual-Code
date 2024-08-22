@@ -910,6 +910,18 @@
 // 3  *: showClock(12, 30) // Saat 12-dir, 30 deqiqedir.
 // showClock(11) // Saat 11-dir.  //  eger deqiqe verilmese, deqiqe hissesi yazilmasin
 
+const showClock = (saat, deqiqe) => {
+  //   let result = ` `;
+  if (Number(saat) && Number(deqiqe)) {
+    console.log(`saat ${saat}-dir, ${deqiqe} deqiqedir`);
+  } else {
+    console.log(`saat ${saat}-dir`);
+  }
+  //   return result;
+};
+showClock(12, 30);
+showClock(12);
+
 // ----------------------------------------------------------------------------------------------
 
 // switch
