@@ -1134,3 +1134,16 @@
 // repeatCharV7(32, 8); // 8-16-24-32
 // repeatCharV7(20, 6); // 6-12-18
 // ----------------------------------------------------------------------------------------------
+
+// 14: showClock(13,45) // Saat: 13 Deqiqe: 45
+// showClock(16) // Saat: 16
+
+const showClock = (hours, minutes) => {
+  if (Number(hours) && Number(minutes)) {
+    console.log(`Saat: ${hours} Deqiqe: ${minutes}`);
+  } else if (null === minutes || undefined === minutes) {
+    console.log(`Saat: ${hours}`);
+  }
+};
+showClock(13, 45);
+showClock(16);
