@@ -446,7 +446,7 @@
 // // cox qisa yol ile
 // let result = user % 2 === 0 ? `${user} cut eddetdir` : `${user} tek eddetdir`;
 // console.log(result);
-// ____________________________-
+// ____________________________
 // if else ile
 
 // let user = parseFloat(prompt("tek ve ya cut eded yaz"));
@@ -865,22 +865,59 @@
 // Həmin funksiya geriyə funksiya göndərsin.
 // Geriyə göndərdiyi funksiyada əgər cins qadındırsa qarşısına Xanım, kişidirsə cənab yazılıb, console-a çıxarılsın.
 
-function greet(cins, ad) {
-  return function () {
-    let title;
-    if (cins === "Q") {
-      title = "Xanim";
-    } else if (cins === "K") {
-      title = "Cenab";
-    } else {
-      title = "";
-    }
-    console.log(`${title} ${ad}`);
-  };
-}
-const Qadin = greet("Q", "Ayla");
-Qadin();
-const Kishi = greet("K", "Ruslan");
-Kishi();
+// function greet(cins, ad) {
+//   return function () {
+//     let title;
+//     if (cins === "Q") {
+//       title = "Xanim";
+//     } else if (cins === "K") {
+//       title = "Cenab";
+//     } else {
+//       title = "";
+//     }
+//     console.log(`${title} ${ad}`);
+//   };
+// }
+// const Qadin = greet("Q", "Ayla");
+// Qadin();
+// const Kishi = greet("K", "Ruslan");
+// Kishi();
+
+// ----------------------------------------------------------------------------------------------
+
+//_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Asagidaki tasklari arrow function isletmekle yaz:
+
+// 1: usernameEmoji("alion","🦁") // 🦁alion🦁
+
+const usernameEmoji = (name, emoji) => {
+  let result = emoji + name + emoji;
+  console.log(result);
+  return result;
+};
+usernameEmoji("alion", "🦁");
+
+// ----------------------------------------------------------------------------------------------
+
+// 2. switch (adi kalkulyator, +, -, *, / desteklensin!)
+// Task2: calculator(12,23,'+') // 35
+// calculator(12,2,'*') // 24
+
+// ----------------------------------------------------------------------------------------------
+
+// if/else
+// 3  *: showClock(12, 30) // Saat 12-dir, 30 deqiqedir.
+// showClock(11) // Saat 11-dir.  //  eger deqiqe verilmese, deqiqe hissesi yazilmasin
+
+// ----------------------------------------------------------------------------------------------
+
+// switch
+//4. Xos gelmisiniz, sozunun diger dillerde tercumesi
+// Task4: translateWelcome("az") // Xos gelmisiniz
+// translateWelcome("en") // Welcome
+// translateWelcome("ru") // Dobro pojalovat
+// translateWelcome("ir") // Khosh amedi!
+// translateWelcome("basqaBirDil") // Bu dil desteklenmir!
 
 // ----------------------------------------------------------------------------------------------
