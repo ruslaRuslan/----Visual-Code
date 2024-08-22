@@ -1133,6 +1133,18 @@
 
 // repeatCharV7(32, 8); // 8-16-24-32
 // repeatCharV7(20, 6); // 6-12-18
+// _________________________________________-
+// const repeatCharV7 = (end, interval) => {
+//     let r = "";
+//     for (let i = 1; i <= end; i++) {
+//       if (i % interval === 0) {
+//         r += `${i}-`;
+//       }
+//     }
+//     return r;
+//   };
+//   console.log(repeatCharV7(20, 6));
+//   console.log(repeatCharV7(32, 8));
 // ----------------------------------------------------------------------------------------------
 
 // 14: showClock(13,45) // Saat: 13 Deqiqe: 45
@@ -1153,22 +1165,38 @@
 // showClockAzeri(12) -> 12 tamam
 // showClockAzeri(11, 56) -> 12-ye qalib 4 deqiqe
 
-const showClockAzeri = (hours, minutes) => {
-  if (hours < 0 || hours > 12 || minutes < 0 || minutes > 59) {
-    console.log(``);
-  } else {
-    if (minutes === undefined || minutes == null || minutes === 0) {
-      console.log(`${hours} tamam`);
-    } else if (minutes === 30) {
-      console.log(`${hours + 1}-un yarsi`);
-    } else if (minutes < 30) {
-      console.log(`${hours + 1}-e isleyip ${minutes} deqiqe `);
-    } else if (minutes > 30) {
-      console.log(`${hours + 1}-e qalip ${60 - minutes} deqiqe`);
-    }
-  }
-};
-showClockAzeri(9, 5); //10-e isleyip 5 deqiqe
-showClockAzeri(8, 30); // 9-un yarsi
-showClockAzeri(12); // 12 tamam
-showClockAzeri(11, 56); // 12-e qalip 4 deqiqe
+// const showClockAzeri = (hours, minutes) => {
+//   if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59) {
+//     console.log(``);
+//   } else {
+//     if (minutes === undefined || minutes == null || minutes === 0) {
+//       console.log(`${hours} tamam`);
+//     } else if (minutes === 30) {
+//       console.log(`${hours + 1}-un yarsi`);
+//     } else if (minutes < 30) {
+//       console.log(`${hours + 1}-e isleyip ${minutes} deqiqe `);
+//     } else if (minutes > 30) {
+//       console.log(`${hours + 1}-e qalip ${60 - minutes} deqiqe`);
+//     }
+//   }
+// };
+// showClockAzeri(9, 5); //10-e isleyip 5 deqiqe
+// showClockAzeri(8, 30); // 9-un yarsi
+// showClockAzeri(12); // 12 tamam
+// showClockAzeri(11, 56); // 12-e qalip 4 deqiqe
+
+// // ----------------------------------------------------------------------------------------------
+// Task16: sum(1,100) ->  1-den 100-e qeder ededlerin cemini tap;
+// sum(4, 9) -> 4-den 9-a qeder ededlerin cemini tap; -> 39
+
+// const sum = (num1, num2) => {
+//   let result = 0;
+//   for (let i = num1; i <= num2; i++) {
+//     result += i;
+//   }
+//   console.log(result);
+//   return result;
+// };
+// sum(1, 100); //5050
+// sum(4, 9);   //39
+// // ----------------------------------------------------------------------------------------------
