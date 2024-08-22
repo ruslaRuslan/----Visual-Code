@@ -1020,4 +1020,44 @@
 //   return result;
 // };
 // repeatChar("a", 5);
+// ____________________________________________
+
 // ----------------------------------------------------------------------------------------------
+// 7: repeatChar('😀', 6) // 😀😀😀😀😀😀
+
+// const repeatChar2 = (char, count) => {
+//   let result = "";
+//   for (let i = 1; i <= count; i++) {
+//     result += char;
+//   }
+//   return result;
+// };
+// console.log(repeatChar2("c", 3));
+
+// ----------------------------------------------------------------------------------------------
+
+// 8: repeatCharV2('😀', 10) // 10-u 2ye bol ve o qeder birlesdir 😀😀😀😀😀
+
+const repeatCharV2 = (char, count) => {
+  let result = "";
+  for (let i = 1; i <= count; i++) {
+    if (count % 2 === 0) {
+      let resultD = count / 2;
+      result = char.repeat(resultD);
+    }
+  }
+  return result;
+};
+console.log(repeatCharV2("😀", 10));
+
+// ----------------------------------------------------------------------------------------------
+
+// Task9: repeatCharV3('😀', 5) // 5-den 1 vahid az birlesdir 😀😀😀😀
+// Task10: repeatCharV4(5) // "012345"
+// repeatCharV4(9) // "0123456789"
+// repeatCharV4(12) // "0123456789101112"
+// Task11: repeatCharV5(13) // 024681012  -> verilen edede qeder cut ededleri birlesdir (if/else)
+// Task12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
+
+// Task13: repeatCharV7(20, 6) // 6-12-18
+// repeatCharV7(32, 8) // 8-16-24-32
