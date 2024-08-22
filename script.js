@@ -1138,12 +1138,37 @@
 // 14: showClock(13,45) // Saat: 13 Deqiqe: 45
 // showClock(16) // Saat: 16
 
-const showClock = (hours, minutes) => {
-  if (Number(hours) && Number(minutes)) {
-    console.log(`Saat: ${hours} Deqiqe: ${minutes}`);
-  } else if (null === minutes || undefined === minutes) {
-    console.log(`Saat: ${hours}`);
+// const showClock = (hours, minutes) => {
+//   if (Number(hours) && Number(minutes)) {
+//     console.log(`Saat: ${hours} Deqiqe: ${minutes}`);
+//   } else if (null === minutes || undefined === minutes) {
+//     console.log(`Saat: ${hours}`);
+//   }
+// };
+// showClock(13, 45);
+// showClock(16);
+// // ----------------------------------------------------------------------------------------------
+// 15: showClockAzeri(9, 5)// 09:05 -> 10-a isleyib 5 deqiqe
+// showClockAzeri(8, 30) 8:30 -> 9-un yarisi
+// showClockAzeri(12) -> 12 tamam
+// showClockAzeri(11, 56) -> 12-ye qalib 4 deqiqe
+
+const showClockAzeri = (hours, minutes) => {
+  if (hours < 0 || hours > 12 || minutes < 0 || minutes > 59) {
+    console.log(``);
+  } else {
+    if (minutes === undefined || minutes == null || minutes === 0) {
+      console.log(`${hours} tamam`);
+    } else if (minutes === 30) {
+      console.log(`${hours + 1}-un yarsi`);
+    } else if (minutes < 30) {
+      console.log(`${hours + 1}-e isleyip ${minutes} deqiqe `);
+    } else if (minutes > 30) {
+      console.log(`${hours + 1}-e qalip ${60 - minutes} deqiqe`);
+    }
   }
 };
-showClock(13, 45);
-showClock(16);
+showClockAzeri(9, 5); //10-e isleyip 5 deqiqe
+showClockAzeri(8, 30); // 9-un yarsi
+showClockAzeri(12); // 12 tamam
+showClockAzeri(11, 56); // 12-e qalip 4 deqiqe
