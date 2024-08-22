@@ -1054,20 +1054,32 @@
 
 // Task9: repeatCharV3('😀', 5) // 5-den 1 vahid az birlesdir 😀😀😀😀
 
-const repeatCharV3 = (char, count) => {
-  let result = "";
-  for (let i = 1; i <= count; i++) {
-    if (true) {
-      let resultD = count - 1;
-      result = char.repeat(resultD);
-    }
-  }
-  return result;
-};
-console.log(repeatCharV3("😀", 5)); // 😀😀😀😀
+// const repeatCharV3 = (char, count) => {
+//   let result = "";
+//   for (let i = 1; i <= count; i++) {
+//     if (true) {
+//       let resultD = count - 1;
+//       result = char.repeat(resultD);
+//     }
+//   }
+//   return result;
+// };
+// console.log(repeatCharV3("😀", 5)); // 😀😀😀😀
 // ----------------------------------------------------------------------------------------------
 
 // Task10: repeatCharV4(5) // "012345"
+
+const repeatCharV4 = (numbers) => {
+  let result = "";
+  for (let i = 0; i <= numbers; i++) {
+    result += i;
+  }
+  return result;
+};
+console.log(repeatCharV4(5));
+
+// ----------------------------------------------------------------------------------------------
+
 // repeatCharV4(9) // "0123456789"
 // repeatCharV4(12) // "0123456789101112"
 // Task11: repeatCharV5(13) // 024681012  -> verilen edede qeder cut ededleri birlesdir (if/else)
