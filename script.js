@@ -1087,10 +1087,27 @@
 
 // 11: repeatCharV5(13) // 024681012  -> verilen edede qeder cut ededleri birlesdir (if/else)
 
-const repeatCharV5 = (numbers) => {
+// const repeatCharV5 = (numbers) => {
+//   let result = "";
+//   for (let i = 0; i <= numbers; i++) {
+//     if (i % 2 === 0) {
+//       result += i;
+//     }
+//   }
+//   console.log(result);
+
+//   return result;
+// };
+// repeatCharV5(15);
+
+// ----------------------------------------------------------------------------------------------
+
+// 12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
+
+const repeatCharV6 = (numbers) => {
   let result = "";
   for (let i = 0; i <= numbers; i++) {
-    if (i % 2 === 0) {
+    if (i % 2 !== 0) {
       result += i;
     }
   }
@@ -1098,11 +1115,7 @@ const repeatCharV5 = (numbers) => {
 
   return result;
 };
-repeatCharV5(15);
-
-// ----------------------------------------------------------------------------------------------
-
-// 12: repeatCharV6(15) // 13579111315  -> verilen edede qeder tek ededleri birlesdir
+repeatCharV6(15);
 
 // ----------------------------------------------------------------------------------------------
 
