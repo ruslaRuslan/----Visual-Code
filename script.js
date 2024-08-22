@@ -904,23 +904,54 @@
 // Task2: calculator(12,23,'+') // 35
 // calculator(12,2,'*') // 24
 
+const calculator = (num1, num2, operator) => {
+  switch (operator) {
+    case "+":
+      console.log(num1 + num2);
+      break;
+    case "-":
+      console.log(num1 - num2);
+      break;
+    case "*":
+      console.log(num1 * num2);
+      break;
+    case "/":
+      if (num1 === 0) {
+        console.log("0 hecneye bolunmur");
+      } else if (num2 === 0) {
+        console.log("0-a hecne bolunmur");
+      } else {
+        console.log(num1 / num2);
+      }
+      break;
+
+    default: {
+      console.log("duzgun yaz");
+    }
+  }
+};
+calculator(10, 2, "*");
+calculator(10, 2, "/");
+calculator(10, 2, "-");
+calculator(10, 2, "+");
+calculator(10, 0, "/");
+calculator(0, 2, "/");
+
 // ----------------------------------------------------------------------------------------------
 
 // if/else
 // 3  *: showClock(12, 30) // Saat 12-dir, 30 deqiqedir.
 // showClock(11) // Saat 11-dir.  //  eger deqiqe verilmese, deqiqe hissesi yazilmasin
 
-const showClock = (saat, deqiqe) => {
-  //   let result = ` `;
-  if (Number(saat) && Number(deqiqe)) {
-    console.log(`saat ${saat}-dir, ${deqiqe} deqiqedir`);
-  } else {
-    console.log(`saat ${saat}-dir`);
-  }
-  //   return result;
-};
-showClock(12, 30);
-showClock(12);
+// const showClock = (saat, deqiqe) => {
+//   if (Number(saat) && Number(deqiqe)) {
+//     console.log(`saat ${saat}-dir, ${deqiqe} deqiqedir`);
+//   } else {
+//     console.log(`saat ${saat}-dir`);
+//   }
+// };
+// showClock(12, 30);
+// showClock(12);
 
 // ----------------------------------------------------------------------------------------------
 
@@ -932,4 +963,23 @@ showClock(12);
 // translateWelcome("ir") // Khosh amedi!
 // translateWelcome("basqaBirDil") // Bu dil desteklenmir!
 
+// const translateWelcome = (language) => {
+//   switch (language) {
+//     case "az":
+//       console.log("Xos gelmisiniz");
+//       return;
+//     case "en":
+//       console.log("Welcome");
+//       return;
+//     case "ru":
+//       console.log("Добро пожаловать");
+//       return;
+//     case "ir":
+//       console.log("Khosh amedi");
+//       return;
+//     default:
+//       console.log("Bu dil desteklenmir!");
+//   }
+// };
+// translateWelcome("az");
 // ----------------------------------------------------------------------------------------------
