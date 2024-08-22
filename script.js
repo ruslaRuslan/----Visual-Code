@@ -891,12 +891,12 @@
 
 // 1: usernameEmoji("alion","🦁") // 🦁alion🦁
 
-const usernameEmoji = (name, emoji) => {
-  let result = emoji + name + emoji;
-  console.log(result);
-  return result;
-};
-usernameEmoji("alion", "🦁");
+// const usernameEmoji = (name, emoji) => {
+//   let result = emoji + name + emoji;
+//   console.log(result);
+//   return result;
+// };
+// usernameEmoji("alion", "🦁");
 
 // ----------------------------------------------------------------------------------------------
 
