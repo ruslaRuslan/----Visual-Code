@@ -904,38 +904,38 @@
 // Task2: calculator(12,23,'+') // 35
 // calculator(12,2,'*') // 24
 
-const calculator = (num1, num2, operator) => {
-  switch (operator) {
-    case "+":
-      console.log(num1 + num2);
-      break;
-    case "-":
-      console.log(num1 - num2);
-      break;
-    case "*":
-      console.log(num1 * num2);
-      break;
-    case "/":
-      if (num1 === 0) {
-        console.log("0 hecneye bolunmur");
-      } else if (num2 === 0) {
-        console.log("0-a hecne bolunmur");
-      } else {
-        console.log(num1 / num2);
-      }
-      break;
+// const calculator = (num1, num2, operator) => {
+//   switch (operator) {
+//     case "+":
+//       console.log(num1 + num2);
+//       return;
+//     case "-":
+//       console.log(num1 - num2);
+//       return;
+//     case "*":
+//       console.log(num1 * num2);
+//       return;
+//     case "/":
+//       if (num1 === 0) {
+//         console.log("0 hecneye bolunmur");
+//       } else if (num2 === 0) {
+//         console.log("0-a hecne bolunmur");
+//       } else {
+//         console.log(num1 / num2);
+//       }
+//       return;
 
-    default: {
-      console.log("duzgun yaz");
-    }
-  }
-};
-calculator(10, 2, "*");
-calculator(10, 2, "/");
-calculator(10, 2, "-");
-calculator(10, 2, "+");
-calculator(10, 0, "/");
-calculator(0, 2, "/");
+//     default: {
+//       console.log("duzgun yaz");
+//     }
+//   }
+// };
+// calculator(10, 2, "*");
+// calculator(10, 2, "/");
+// calculator(10, 2, "-");
+// calculator(10, 2, "+");
+// calculator(10, 0, "/");
+// calculator(0, 2, "/");
 
 // ----------------------------------------------------------------------------------------------
 
@@ -983,3 +983,33 @@ calculator(0, 2, "/");
 // };
 // translateWelcome("az");
 // ----------------------------------------------------------------------------------------------
+// 5: ageGroup(6) // usaq
+// ageGroup(20) // genc
+// ageGroup(50) // qoca
+// ageGroup(90) // ahil
+// verilen yasa gore yas qrupunu console-a yaz:
+// [0-9]  usaq
+// [9-25] genc,
+// [26-45] yetkin
+// [45-60]  qoca
+// 80+ ahil
+
+// const ageGroup = (age) => {
+//   if (age <= 9) {
+//     console.log("usaq");
+//   } else if (age <= 25) {
+//     console.log("genc");
+//   } else if (age <= 45) {
+//     console.log("yetkin");
+//   } else if (age <= 60) {
+//     console.log("qoca");
+//   } else {
+//     console.log("ahil");
+//   }
+// };
+// ageGroup(66);
+
+// ----------------------------------------------------------------------------------------------
+
+// 6: repeatChar('a',5) // aaaaa
+// verdiyim simvolu eded qeder tekrarlayib birlesdir
