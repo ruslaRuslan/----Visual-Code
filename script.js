@@ -1247,3 +1247,20 @@
 // };
 // sumV2(2, 13, 5);
 // sumV2(1, 60, 13);
+// ----------------------------------------------------------------------------------------------
+
+// Task20: sumV3(num) -> 1-den 100e qeder intervalda, verilen edede bolunen ededlerin cemi
+// sumV3(12) // 12, 24, 36, 48, 60, 72, 84, 96 ~> 432
+
+const sumV3 = (num) => {
+  let result = 0;
+  for (let i = 1; i <= 100; i++) {
+    if (i % num === 0) {
+      result += i;
+    }
+  }
+  console.log(result);
+  return result;
+};
+sumV3(12); //432
+sumV3(50); // 150
