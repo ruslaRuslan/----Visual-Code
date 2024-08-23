@@ -1338,15 +1338,15 @@
 // translateSong("az")// Briliant kimi parla!
 // translateSong("ru")// Сияй ярко, как бриллиант!
 
-const translateSong = (language) => {
-  if (language === "az") {
-    console.log("Briliant kimi parla!");
-  } else if (language === "ru") {
-    console.log("Сияй ярко, как бриллиант!");
-  } else {
-    console.log("Yalnish!!");
-  }
-};
-translateSong("ru");
-translateSong("az");
-translateSong("en");
+// const translateSong = (language) => {
+//   if (language === "az") {
+//     console.log("Briliant kimi parla!");
+//   } else if (language === "ru") {
+//     console.log("Сияй ярко, как бриллиант!");
+//   } else {
+//     console.log("Yalnish!!");
+//   }
+// };
+// translateSong("ru");
+// translateSong("az");
+// translateSong("en");
