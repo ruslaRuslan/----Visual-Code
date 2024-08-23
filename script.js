@@ -1267,20 +1267,39 @@
 
 // ----------------------------------------------------------------------------------------------
 
-// task21: {for, if} sumV4(50) : 1, 2, 5, 10, 25, 50 -> 93 dividend
+// 21: {for, if} sumV4(50) : 1, 2, 5, 10, 25, 50 -> 93 dividend
 // sumV4(12) // 1, 2, 3, 4, 6, 12 -> 28
 
-const sumV4 = (num) => {
+// const sumV4 = (num) => {
+//   let result = 0;
+//   for (let i = 0; i <= num; i++) {
+//     if (num % i === 0) {
+//       result += i;
+//     }
+//   }
+//   console.log(result);
+//   return result;
+// };
+// sumV4(12);
+// sumV4(10);
+
+// ----------------------------------------------------------------------------------------------
+// 22: {for} Ancaq 4 reqemli eded olacaq! sumV5(eded)
+//sumV5(2018) -> bu ededin reqemlinin cemi: 2+0+1+8= 11
+// sumV5(6785) -> bu ededin reqemlinin cemi: 6+7+8+5= 26
+
+const sumV5 = (eded) => {
+  if (1000 > eded || eded > 9999) {
+    return "yalnis 4 reqli eded yaz!!!";
+  }
+
   let result = 0;
-  for (let i = 0; i <= num; i++) {
-    if (num % i === 0) {
-      result += i;
-    }
+  let stringNumber = eded.toString();
+  for (let i = 0; i < stringNumber.length; i++) {
+    result += parseInt(stringNumber[i]);
   }
   console.log(result);
   return result;
 };
-sumV4(12);
-sumV4(10);
-
-// ----------------------------------------------------------------------------------------------
+sumV5(2018);
+sumV5(6785);
