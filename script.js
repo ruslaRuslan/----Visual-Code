@@ -1186,7 +1186,7 @@
 // showClockAzeri(11, 56); // 12-e qalip 4 deqiqe
 
 // // ----------------------------------------------------------------------------------------------
-// Task16: sum(1,100) ->  1-den 100-e qeder ededlerin cemini tap;
+// 16: sum(1,100) ->  1-den 100-e qeder ededlerin cemini tap;
 // sum(4, 9) -> 4-den 9-a qeder ededlerin cemini tap; -> 39
 
 // const sum = (num1, num2) => {
@@ -1200,7 +1200,7 @@
 // sum(1, 100); //5050
 // sum(4, 9);   //39
 // ----------------------------------------------------------------------------------------------
-// Task17: edediOrta(2,6) //  10 ~> 2+3+4+5+6 = 20 / 2 =  10
+// 17: edediOrta(2,6) //  10 ~> 2+3+4+5+6 = 20 / 2 =  10
 // verilen ededlerin arasini topla ve ortalama qiymet cixart.
 
 // const edediOrta = (num1, num2) => {
@@ -1215,7 +1215,7 @@
 // edediOrta(5, 10);
 
 // ----------------------------------------------------------------------------------------------
-// Task18:
+// 18:
 // repeatCharV8(1, 4, 10) //  1-5-9-
 // repeatCharV8(2, 3, 8) // 2-5-8-
 // repeatCharV8(4, 7, 20) // 4-11-18-
@@ -1230,7 +1230,7 @@
 // repeatCharV8(4, 7, 20); // 4-11-18-
 
 // ----------------------------------------------------------------------------------------------
-// Task19: {for, if} sumV2(start, end, number)
+// 19: {for, if} sumV2(start, end, number)
 // sumV2(2, 13, 5) // 5, 10 ~> 15
 // sumV2(1, 60, 13) // 13, 26, 39, 52 -> 130
 
@@ -1249,18 +1249,38 @@
 // sumV2(1, 60, 13);
 // ----------------------------------------------------------------------------------------------
 
-// Task20: sumV3(num) -> 1-den 100e qeder intervalda, verilen edede bolunen ededlerin cemi
+// 20: sumV3(num) -> 1-den 100e qeder intervalda, verilen edede bolunen ededlerin cemi
 // sumV3(12) // 12, 24, 36, 48, 60, 72, 84, 96 ~> 432
 
-const sumV3 = (num) => {
+// const sumV3 = (num) => {
+//   let result = 0;
+//   for (let i = 1; i <= 100; i++) {
+//     if (i % num === 0) {
+//       result += i;
+//     }
+//   }
+//   console.log(result);
+//   return result;
+// };
+// sumV3(12); //432
+// sumV3(50); // 150
+
+// ----------------------------------------------------------------------------------------------
+
+// task21: {for, if} sumV4(50) : 1, 2, 5, 10, 25, 50 -> 93 dividend
+// sumV4(12) // 1, 2, 3, 4, 6, 12 -> 28
+
+const sumV4 = (num) => {
   let result = 0;
-  for (let i = 1; i <= 100; i++) {
-    if (i % num === 0) {
+  for (let i = 0; i <= num; i++) {
+    if (num % i === 0) {
       result += i;
     }
   }
   console.log(result);
   return result;
 };
-sumV3(12); //432
-sumV3(50); // 150
+sumV4(12);
+sumV4(10);
+
+// ----------------------------------------------------------------------------------------------
