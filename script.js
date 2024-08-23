@@ -1288,18 +1288,35 @@
 //sumV5(2018) -> bu ededin reqemlinin cemi: 2+0+1+8= 11
 // sumV5(6785) -> bu ededin reqemlinin cemi: 6+7+8+5= 26
 
-const sumV5 = (eded) => {
-  if (1000 > eded || eded > 9999) {
-    return "yalnis 4 reqli eded yaz!!!";
-  }
+// const sumV5 = (eded) => {
+//   if (1000 > eded || eded > 9999) {
+//     return "yalnis 4 reqli eded yaz!!!";
+//   }
 
-  let result = 0;
-  let stringNumber = eded.toString();
-  for (let i = 0; i < stringNumber.length; i++) {
-    result += parseInt(stringNumber[i]);
-  }
-  console.log(result);
-  return result;
-};
-sumV5(2018);
-sumV5(6785);
+//   let result = 0;
+//   let stringNumber = eded.toString();
+//   for (let i = 0; i < stringNumber.length; i++) {
+//     result += parseInt(stringNumber[i]);
+//   }
+//   console.log(result);
+//   return result;
+// };
+// sumV5(2018);
+// sumV5(6785);
+
+// ----------------------------------------------------------------------------------------------
+// 23: sumV6(135)
+// 1000-den 9999 (4reqemli ededlerin icerisinde verilen edede bolunen ededleri console-a yaz)
+
+// const sumV6 = (number) => {
+//   let result = "";
+//   for (let i = 1000; i <= 9999; i++) {
+//     if (i % number === 0) {
+//       result += `${i},`;
+//     }
+//   }
+//   console.log(result);
+//   return result;
+// };
+// sumV6(135);
+// sumV6(1000);
