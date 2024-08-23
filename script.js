@@ -1203,15 +1203,31 @@
 // Task17: edediOrta(2,6) //  10 ~> 2+3+4+5+6 = 20 / 2 =  10
 // verilen ededlerin arasini topla ve ortalama qiymet cixart.
 
-const edediOrta = (num1, num2) => {
-  let result = 0;
-  for (let i = num1; i <= num2; i++) {
-    result += i;
-  }
-  let resultD = result / num1;
-  console.log(`${num1} = ${resultD}`);
+// const edediOrta = (num1, num2) => {
+//   let result = 0;
+//   for (let i = num1; i <= num2; i++) {
+//     result += i;
+//   }
+//   let resultD = result / num1;
+//   console.log(`${num1} = ${resultD}`);
+// };
+// edediOrta(2, 6);
+// edediOrta(5, 10);
+
+// ----------------------------------------------------------------------------------------------
+// Task18:
+// repeatCharV8(1, 4, 10) //  1-5-9-
+// repeatCharV8(2, 3, 8) // 2-5-8-
+// repeatCharV8(4, 7, 20) // 4-11-18-
+
+const repeatCharV8 = (num1, num2, num3) => {
+  let result = num1 + num2;
+  let resultD = `${num1}-${result}-${(num3 = result + num2)}- `;
+  console.log(resultD);
+  return resultD;
 };
-edediOrta(2, 6);
-edediOrta(5, 10);
+repeatCharV8(1, 4, 10); //  1-5-9-
+repeatCharV8(2, 3, 8); // 2-5-8-
+repeatCharV8(4, 7, 20); // 4-11-18-
 
 // ----------------------------------------------------------------------------------------------
