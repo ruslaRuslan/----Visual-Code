@@ -1325,10 +1325,28 @@
 // 24: sumV7();
 // sumV7(11, 22, 33, 44, 55, 66, 77, 88, 99) -> bunlarin cemi
 
-const sumV7 = (...num) => {
-  let result = num.reduce((a, b) => a + b);
-  console.log(result);
-  return result;
+// const sumV7 = (...num) => {
+//   let result = num.reduce((a, b) => a + b);
+//   console.log(result);
+//   return result;
+// };
+// sumV7(11, 22, 33, 44, 55, 66, 77, 88, 99);
+// sumV7(1111, 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999);
+
+// ----------------------------------------------------------------------------------------------
+// 25: translateSong("en")// Shine bright like a diamond!
+// translateSong("az")// Briliant kimi parla!
+// translateSong("ru")// Сияй ярко, как бриллиант!
+
+const translateSong = (language) => {
+  if (language === "az") {
+    console.log("Briliant kimi parla!");
+  } else if (language === "ru") {
+    console.log("Сияй ярко, как бриллиант!");
+  } else {
+    console.log("Yalnish!!");
+  }
 };
-sumV7(11, 22, 33, 44, 55, 66, 77, 88, 99);
-sumV7(5, 3);
+translateSong("ru");
+translateSong("az");
+translateSong("en");
