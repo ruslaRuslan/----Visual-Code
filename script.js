@@ -1220,14 +1220,30 @@
 // repeatCharV8(2, 3, 8) // 2-5-8-
 // repeatCharV8(4, 7, 20) // 4-11-18-
 
-const repeatCharV8 = (num1, num2, num3) => {
-  let result = num1 + num2;
-  let resultD = `${num1}-${result}-${(num3 = result + num2)}- `;
-  console.log(resultD);
-  return resultD;
-};
-repeatCharV8(1, 4, 10); //  1-5-9-
-repeatCharV8(2, 3, 8); // 2-5-8-
-repeatCharV8(4, 7, 20); // 4-11-18-
+// const repeatCharV8 = (num1, num2, num3) => {
+//   let result = `${num1}-${num1 + num2}-${(num3 = num1 + num2 + num2)}- `;
+//   console.log(result);
+//   return result;
+// };
+// repeatCharV8(1, 4, 10); //  1-5-9-
+// repeatCharV8(2, 3, 8); // 2-5-8-
+// repeatCharV8(4, 7, 20); // 4-11-18-
 
 // ----------------------------------------------------------------------------------------------
+// Task19: {for, if} sumV2(start, end, number)
+// sumV2(2, 13, 5) // 5, 10 ~> 15
+// sumV2(1, 60, 13) // 13, 26, 39, 52 -> 130
+
+// const sumV2 = (start, end, number) => {
+//   let result = 0;
+//   for (let i = start; i <= end; i++) {
+//     if (i % number === 0) {
+//       result += i;
+//     }
+//   }
+//   console.log(result);
+
+//   return result;
+// };
+// sumV2(2, 13, 5);
+// sumV2(1, 60, 13);
