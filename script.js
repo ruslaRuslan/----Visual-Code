@@ -1350,3 +1350,27 @@
 // translateSong("ru");
 // translateSong("az");
 // translateSong("en");
+// ----------------------------------------------------------------------------------------------
+
+// task26: showLang("html") // HyperText markup Language
+// showLang("css") // cascading stylesheets
+// showLang("js") // javascript
+// showLang("ts") // typescript
+
+const showLang = (front) => {
+  if (front === "html") {
+    console.log("HyperText markup Language");
+  } else if (front === "css") {
+    console.log("cascading stylesheets");
+  } else if (front === "js") {
+    console.log("javascript");
+  } else if (front === "ts") {
+    console.log("typescript");
+  } else {
+    console.log("");
+  }
+};
+showLang("html"); // HyperText markup Language
+showLang("css"); // cascading stylesheets
+showLang("js"); // javascript
+showLang("ts"); // typescript
