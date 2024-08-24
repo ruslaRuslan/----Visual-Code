@@ -1352,25 +1352,59 @@
 // translateSong("en");
 // ----------------------------------------------------------------------------------------------
 
-// task26: showLang("html") // HyperText markup Language
+// 26: showLang("html") // HyperText markup Language
 // showLang("css") // cascading stylesheets
 // showLang("js") // javascript
 // showLang("ts") // typescript
 
-const showLang = (front) => {
-  if (front === "html") {
-    console.log("HyperText markup Language");
-  } else if (front === "css") {
-    console.log("cascading stylesheets");
-  } else if (front === "js") {
-    console.log("javascript");
-  } else if (front === "ts") {
-    console.log("typescript");
+// const showLang = (front) => {
+//   if (front === "html") {
+//     console.log("HyperText markup Language");
+//   } else if (front === "css") {
+//     console.log("cascading stylesheets");
+//   } else if (front === "js") {
+//     console.log("javascript");
+//   } else if (front === "ts") {
+//     console.log("typescript");
+//   } else {
+//     console.log("");
+//   }
+// };
+// showLang("html"); // HyperText markup Language
+// showLang("css"); // cascading stylesheets
+// showLang("js"); // javascript
+// showLang("ts"); // typescript
+// ----------------------------------------------------------------------------------------------
+// 27: sayNumberAzeri(12) : her zaman 2 reqemli eded olacaq, hemin ededleri console-a azerbaycanca yazsin
+// sayNumberAzeri(12) -> bir iki
+// sayNumberAzeri(85) -> sekkiz bes
+// sayNumberAzeri(26) -> iki alti
+// sayNumberAzeri(10) -> bir sifir
+
+const sayNumberAzeri = (number) => {
+  let digitToWord = {
+    0: "sifir",
+    1: "bir",
+    2: "iki",
+    3: "uc",
+    4: "dord",
+    5: "besh",
+    6: "alti",
+    7: "yeddi",
+    8: "sekkiz",
+    9: "dokquz",
+  };
+
+  if (10 <= number && 99 >= number) {
+    let one = Math.floor(number / 10);
+    let two = number % 10;
+    let result = `${digitToWord[one]} ${digitToWord[two]}`;
+    console.log(result);
   } else {
-    console.log("");
+    console.log("iki reqemli eded yaz!!");
   }
 };
-showLang("html"); // HyperText markup Language
-showLang("css"); // cascading stylesheets
-showLang("js"); // javascript
-showLang("ts"); // typescript
+
+sayNumberAzeri(24);
+
+// ----------------------------------------------------------------------------------------------
