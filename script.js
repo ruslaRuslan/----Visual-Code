@@ -1381,9 +1381,45 @@
 // sayNumberAzeri(26) -> iki alti
 // sayNumberAzeri(10) -> bir sifir
 
+// const sayNumberAzeri = (number) => {
+//   let digitToWord = {
+//     0: "sifir",
+//     1: "bir",
+//     2: "iki",
+//     3: "uc",
+//     4: "dord",
+//     5: "besh",
+//     6: "alti",
+//     7: "yeddi",
+//     8: "sekkiz",
+//     9: "dokquz",
+//   };
+
+//   if (10 <= number && 99 >= number) {
+//     let one = Math.floor(number / 10);
+//     let two = number % 10;
+//     let result = `${digitToWord[one]} ${digitToWord[two]}`;
+//     console.log(result);
+//   } else {
+//     console.log("iki reqemli eded yaz!!");
+//   }
+// };
+
+// sayNumberAzeri(24);
+
+// ----------------------------------------------------------------------------------------------
+
+// 28*: sayNumberAzeri(12) : her zaman 2 reqemli eded olacaq, hemin ededleri console-a azerbaycanca dogru formada yazsin
+// sayNumberAzeri(12) -> on iki
+// sayNumberAzeri(85) -> seksen bes
+// sayNumberAzeri(26) -> iyirmi alti
+// sayNumberAzeri(22) -> iyirmi iki
+// sayNumberAzeri(30) -> otuz
+// sayNumberAzeri(54) -> elli dord
+
 const sayNumberAzeri = (number) => {
   let digitToWord = {
-    0: "sifir",
+    0: "",
     1: "bir",
     2: "iki",
     3: "uc",
@@ -1394,17 +1430,32 @@ const sayNumberAzeri = (number) => {
     8: "sekkiz",
     9: "dokquz",
   };
+  let digitToWord2 = {
+    0: "",
+    1: "on",
+    2: "iyirmi",
+    3: "otuz",
+    4: "qirx",
+    5: "elli",
+    6: "altmis",
+    7: "yetmis",
+    8: "seksen",
+    9: "doxsan",
+  };
 
   if (10 <= number && 99 >= number) {
     let one = Math.floor(number / 10);
     let two = number % 10;
-    let result = `${digitToWord[one]} ${digitToWord[two]}`;
-    console.log(result);
+    console.log(`${digitToWord2[one]} ${digitToWord[two]}`);
   } else {
-    console.log("iki reqemli eded yaz!!");
+    console.log("iki reqemli eded yaz!!!");
   }
 };
-
-sayNumberAzeri(24);
+sayNumberAzeri(12); // on iki
+sayNumberAzeri(85); // seksen bes
+sayNumberAzeri(26); // iyirmi alti
+sayNumberAzeri(22); // iyirmi iki
+sayNumberAzeri(30); // otuz
+sayNumberAzeri(54); // elli dord
 
 // ----------------------------------------------------------------------------------------------
