@@ -1417,45 +1417,73 @@
 // sayNumberAzeri(30) -> otuz
 // sayNumberAzeri(54) -> elli dord
 
-const sayNumberAzeri = (number) => {
-  let digitToWord = {
-    0: "",
-    1: "bir",
-    2: "iki",
-    3: "uc",
-    4: "dord",
-    5: "besh",
-    6: "alti",
-    7: "yeddi",
-    8: "sekkiz",
-    9: "dokquz",
-  };
-  let digitToWord2 = {
-    0: "",
-    1: "on",
-    2: "iyirmi",
-    3: "otuz",
-    4: "qirx",
-    5: "elli",
-    6: "altmis",
-    7: "yetmis",
-    8: "seksen",
-    9: "doxsan",
-  };
+// const sayNumberAzeri = (number) => {
+//   let digitToWord = {
+//     0: "",
+//     1: "bir",
+//     2: "iki",
+//     3: "uc",
+//     4: "dord",
+//     5: "besh",
+//     6: "alti",
+//     7: "yeddi",
+//     8: "sekkiz",
+//     9: "dokquz",
+//   };
+//   let digitToWord2 = {
+//     0: "",
+//     1: "on",
+//     2: "iyirmi",
+//     3: "otuz",
+//     4: "qirx",
+//     5: "elli",
+//     6: "altmis",
+//     7: "yetmis",
+//     8: "seksen",
+//     9: "doxsan",
+//   };
 
-  if (10 <= number && 99 >= number) {
-    let one = Math.floor(number / 10);
-    let two = number % 10;
-    console.log(`${digitToWord2[one]} ${digitToWord[two]}`);
-  } else {
-    console.log("iki reqemli eded yaz!!!");
-  }
-};
-sayNumberAzeri(12); // on iki
-sayNumberAzeri(85); // seksen bes
-sayNumberAzeri(26); // iyirmi alti
-sayNumberAzeri(22); // iyirmi iki
-sayNumberAzeri(30); // otuz
-sayNumberAzeri(54); // elli dord
+//   if (10 <= number && 99 >= number) {
+//     let one = Math.floor(number / 10);
+//     let two = number % 10;
+//     console.log(`${digitToWord2[one]} ${digitToWord[two]}`);
+//   } else {
+//     console.log("iki reqemli eded yaz!!!");
+//   }
+// };
+// sayNumberAzeri(12); // on iki
+// sayNumberAzeri(85); // seksen bes
+// sayNumberAzeri(26); // iyirmi alti
+// sayNumberAzeri(22); // iyirmi iki
+// sayNumberAzeri(30); // otuz
+// sayNumberAzeri(54); // elli dord
 
 // ----------------------------------------------------------------------------------------------
+
+// 29: cmToM(180) -> 1m 80cm
+// cmToM(170) -> 1m 70cm
+// cmToM(800) -> 8m
+
+// const cmToM = (number) => {
+//   let m = Math.floor(number / 100);
+//   let sm = number % 100;
+//   let result;
+//   if (0 < m && 0 < sm) {
+//     result = `${m}m ${sm}sm`;
+//   } else if (0 < m) {
+//     result = `${m}m`;
+//   } else if (sm > 0) {
+//     result = `${sm}`;
+//   }
+//   console.log(result);
+
+//   return result;
+// };
+// cmToM(180); // 1 m 80 sm
+// cmToM(170); // 1m 70cm
+// cmToM(800); // 8m
+// ----------------------------------------------------------------------------------------------
+
+// 30: mToKm(1236) -> 1km 236m
+// mToKm(8000) -> 8km
+// mToKm(8976) -> 8km 976m
