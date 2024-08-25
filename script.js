@@ -1487,3 +1487,24 @@
 // 30: mToKm(1236) -> 1km 236m
 // mToKm(8000) -> 8km
 // mToKm(8976) -> 8km 976m
+
+// const mToKm = (num) => {
+//   let km = Math.floor(num / 1000);
+//   let m = num % 1000;
+//   let result;
+//   if (m > 0 && km > 0) {
+//     result = `${km}km ${m}m`;
+//   } else if (0 < km) {
+//     result = `${km}km`;
+//   } else if (0 < m) {
+//     result = `${m}m`;
+//   }
+//   console.log(result);
+//   return result;
+// };
+// mToKm(1236); //1km 236m
+// mToKm(8000); //8km
+// mToKm(8976); //8km 976m
+// mToKm(8085); //8km 85m
+
+// ----------------------------------------------------------------------------------------------
