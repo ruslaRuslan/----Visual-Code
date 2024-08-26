@@ -1648,17 +1648,29 @@
 // #task8 getPhone()
 //     - Return the phone number.
 
-const getPhone = (obj) => {
-  console.log(obj.phone);
-  return obj.phone;
-};
-getPhone({ phone: 994505574376 });
-getPhone({ phone: 79851618260 });
+// const getPhone = (obj) => {
+//   console.log(obj.phone);
+//   return obj.phone;
+// };
+// getPhone({ phone: 994505574376 });
+// getPhone({ phone: 79851618260 });
 
 // __________________________________________________________________________________________________________________________________
 
-// getCompanyInfo()
+// #task9 getCompanyInfo()
 //     - Return the company information as a string.
+
+const getCompanyInfo = (obj) => {
+  console.log(obj.info);
+  return obj.info;
+};
+getCompanyInfo({
+  info: "Apple's flagship smartphone, known for its advanced features and integration with the iOS operating system. The iPhone has seen numerous iterations since its initial launch in 2007.",
+});
+getCompanyInfo({
+  info: "A line of tablet computers that provide a versatile platform for productivity, entertainment, and education. The iPad comes in several models, including the standard iPad, iPad Air, iPad mini, and iPad Pro.",
+});
+// __________________________________________________________________________________________________________________________________
 
 // getWebsite()
 //     - Return the website URL.
