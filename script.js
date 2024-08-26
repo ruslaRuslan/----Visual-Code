@@ -1567,13 +1567,13 @@
 // propertyTaker({  country: 'Sweden',  continent: 'Europe'}, 'country')  // 'Sweden'
 // propertyTaker({name:'ali', age:12}, 'name')  // 'ali'
 
-function propertyTaker(obj, proprtyName) {
-  console.log(obj[proprtyName]);
-  return obj[proprtyName];
-}
-propertyTaker({ continent: "Asia", country: "Japan" }, "continent"); // 'Asia'
-propertyTaker({ country: "Sweden", continent: "Europe" }, "country"); // 'Sweden'
-propertyTaker({ name: "ali", age: 12 }, "name"); // 'ali'
+// function propertyTaker(obj, proprtyName) {
+//   console.log(obj[proprtyName]);
+//   return obj[proprtyName];
+// }
+// propertyTaker({ continent: "Asia", country: "Japan" }, "continent"); // 'Asia'
+// propertyTaker({ country: "Sweden", continent: "Europe" }, "country"); // 'Sweden'
+// propertyTaker({ name: "ali", age: 12 }, "name"); // 'ali'
 // __________________________________________________________________________________________________________________________________
 // #task3.
 // existsAndTruthy adinda funksiya yaradin. Argument kimi obyekt(obj) ve string (propertyName)  alsin. Eger hemin obyektden o adda property varsa ve truthy-dirse, true qaytarsin eks halda false qaytarsin. Mes,
@@ -1581,3 +1581,56 @@ propertyTaker({ name: "ali", age: 12 }, "name"); // 'ali'
 // existsAndTruthy({a:1,b:2,c:3},'b') // true
 // existsAndTruthy({x:'a',y:null,z:'c'},'y')  // false (obyektde 'y' var amma falsy-di ona gore false)
 // existsAndTruthy({x:'a',b:'b',z:undefined},'z')  // false  (obyektde 'z' yoxdu ona gore false)
+
+function existsAndTruthy(obj, propertyName) {
+  let result = obj.hasOwnProperty(propertyName) && Boolean(obj[propertyName]);
+  console.log(result);
+  return result;
+}
+existsAndTruthy({ a: 1, b: 2, c: 3 }, "b"); // true
+existsAndTruthy({ x: "a", y: null, z: "c" }, "y"); // false (obyektde 'y' var amma falsy-di ona gore false)
+existsAndTruthy({ x: "a", b: "b", z: undefined }, "z"); // false  (obyektde 'z' yoxdu ona gore false)
+
+// __________________________________________________________________________________________________________________________________
+// #task4 getID()
+//     - Return the value of the 'id' property.
+
+function getId(obj) {
+  let result = obj.id;
+  console.log(result);
+  return result;
+}
+getId({ id: 8564, name: "Ruslan", surname: "Zeynalov" });
+getId({ id: 5757, name: "Alion", surname: "Isiyev" });
+
+// __________________________________________________________________________________________________________________________________
+
+// getFullName()
+//     - Return the full name by concatenating the 'name' and 'username' properties.
+
+// getAddress()
+//     - Return the full address as a string.
+
+// getGeoLocation()
+//     - Return the latitude and longitude as an array.
+
+// getPhone()
+//     - Return the phone number.
+
+// getCompanyInfo()
+//     - Return the company information as a string.
+
+// getWebsite()
+//     - Return the website URL.
+
+// getStreet()
+//     - Return the street name.
+
+// getCompanyBs()
+//     - Return the 'bs' property from the company.
+
+// getZipCode()
+//     - Return the zip code.
+
+// getCompanyAndWebsite()
+//     - Return a string combining company name and website.
