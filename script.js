@@ -1552,11 +1552,11 @@
 // prop2Taker({  one: 1,  'prop-2': 2})  // 2
 // prop2Taker({  'prop-2': 'two',  prop: 'test'})  // 'two'
 
-function prop2Taker(obj) {
-  return obj["prop-2"];
-}
-console.log(prop2Taker({ one: 1, "prop-2": 2 })); // 2
-console.log(prop2Taker({ "prop-2": "two", prop: "test" })); // two
+// function prop2Taker(obj) {
+//   return obj["prop-2"];
+// }
+// console.log(prop2Taker({ one: 1, "prop-2": 2 })); // 2
+// console.log(prop2Taker({ "prop-2": "two", prop: "test" })); // two
 
 // __________________________________________________________________________________________________________________________________
 
@@ -1566,6 +1566,14 @@ console.log(prop2Taker({ "prop-2": "two", prop: "test" })); // two
 // propertyTaker({  continent: 'Asia',  country: 'Japan'}, 'continent') // 'Asia'
 // propertyTaker({  country: 'Sweden',  continent: 'Europe'}, 'country')  // 'Sweden'
 // propertyTaker({name:'ali', age:12}, 'name')  // 'ali'
+
+function propertyTaker(obj, proprtyName) {
+  console.log(obj[proprtyName]);
+  return obj[proprtyName];
+}
+propertyTaker({ continent: "Asia", country: "Japan" }, "continent"); // 'Asia'
+propertyTaker({ country: "Sweden", continent: "Europe" }, "country"); // 'Sweden'
+propertyTaker({ name: "ali", age: 12 }, "name"); // 'ali'
 // __________________________________________________________________________________________________________________________________
 // #task3.
 // existsAndTruthy adinda funksiya yaradin. Argument kimi obyekt(obj) ve string (propertyName)  alsin. Eger hemin obyektden o adda property varsa ve truthy-dirse, true qaytarsin eks halda false qaytarsin. Mes,
