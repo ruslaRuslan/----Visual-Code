@@ -1558,7 +1558,7 @@
 // console.log(prop2Taker({ one: 1, "prop-2": 2 })); // 2
 // console.log(prop2Taker({ "prop-2": "two", prop: "test" })); // two
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task2.
 // propertyTaker adinda funksiya yaradin. Argument kimi obyekt (obj) ve string (proprtyName) alsin. Hemin obyektin verdiyim propertyni cixarsin. Mes:
@@ -1574,7 +1574,8 @@
 // propertyTaker({ continent: "Asia", country: "Japan" }, "continent"); // 'Asia'
 // propertyTaker({ country: "Sweden", continent: "Europe" }, "country"); // 'Sweden'
 // propertyTaker({ name: "ali", age: 12 }, "name"); // 'ali'
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // #task3.
 // existsAndTruthy adinda funksiya yaradin. Argument kimi obyekt(obj) ve string (propertyName)  alsin. Eger hemin obyektden o adda property varsa ve truthy-dirse, true qaytarsin eks halda false qaytarsin. Mes,
 
@@ -1591,7 +1592,8 @@
 // existsAndTruthy({ x: "a", y: null, z: "c" }, "y"); // false (obyektde 'y' var amma falsy-di ona gore false)
 // existsAndTruthy({ x: "a", b: "b", z: undefined }, "z"); // false  (obyektde 'z' yoxdu ona gore false)
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // #task4 getID()
 //     - Return the value of the 'id' property.
 
@@ -1603,7 +1605,7 @@
 // getId({ id: 8564, name: "Ruslan", surname: "Zeynalov" });
 // getId({ id: 5757, name: "Alion", surname: "Isiyev" });
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task5 getFullName()
 //     - Return the full name by concatenating the 'name' and 'username' properties.
@@ -1616,7 +1618,7 @@
 // };
 // getFullName({ name: "Ruslan", surname: "Zeynalov", city: "Baku" });
 // getFullName({ name: "Ali", surname: "Isiyev", city: "Baku" });
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task6 getAddress()
 //     - Return the full address as a string.
@@ -1631,7 +1633,7 @@
 //   city: "Baku",
 //   address: "Cinarli qesebe C.C kucesi ev 1",
 // });
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 //  #task7 getGeoLocation()
 //     - Return the latitude and longitude as an array.
@@ -1643,7 +1645,7 @@
 // getGeoLocation({ latitude: 586210, longitude: -6247 });
 // getGeoLocation({ latitude: 96302, longitude: -5321 });
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task8 getPhone()
 //     - Return the phone number.
@@ -1655,7 +1657,7 @@
 // getPhone({ phone: 994505574376 });
 // getPhone({ phone: 79851618260 });
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // // #task9 getCompanyInfo()
 // //     - Return the company information as a string.
@@ -1670,7 +1672,7 @@
 // getCompanyInfo({
 //   info: "A line of tablet computers that provide a versatile platform for productivity, entertainment, and education. The iPad comes in several models, including the standard iPad, iPad Air, iPad mini, and iPad Pro.",
 // });
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task10 getWebsite()
 //     - Return the website URL.
@@ -1683,7 +1685,7 @@
 // getWebsite({ website: "https://www.apple.com" });
 // getWebsite({ website: "https://www.samsung.com" });
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task11 getStreet()
 //     - Return the street name.
@@ -1695,18 +1697,55 @@
 // getStreet({ street: "Q.Huseyin kucesi" });
 // getStreet({ street: "C.Cabbarli kucesi" });
 
-// __________________________________________________________________________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // #task11 getCompanyBs()
 //     - Return the 'bs' property from the company.
 
-const getCompanyBs = (company) => console.log(company.bs);
-getCompanyBs({ bs: "Leveraging cutting-edge technology" });
+// const getCompanyBs = (company) => console.log(company.bs);
+// getCompanyBs({ bs: "Leveraging cutting-edge technology" });
+// _____________________________________________________________________________________________________________________________
 
-// __________________________________________________________________________________________________________________________________
+// const getCompanyBs2 = (company) => {
+//   company = {
+//     bs: "Leveraging cutting-edge technology",
+//   };
 
-// getZipCode()
+//   console.log(company.bs);
+// };
+// getCompanyBs2();
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// #task11 getZipCode()
 //     - Return the zip code.
+
+function getZipCode(obj) {
+  obj = {
+    street: "Ahmad mahmudov",
+
+    city: "Baku",
+    postalCode: 1856,
+    country: "Azerbaijan",
+  };
+  console.log(obj.street, obj.city, obj.postalCode, obj.country);
+  return obj;
+}
+getZipCode();
+// _____________________________________________________________________________________________________________________________
+
+function getZipCode2(obj) {
+  let result = `${obj.street} ${obj.city} ${obj.postalCode} ${obj.country}`;
+  console.log(result);
+  return result;
+}
+getZipCode2({
+  street: "Ahmad mahmudov",
+  city: "Baku",
+  postalCode: 1856,
+  country: "Azerbaijan",
+});
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // getCompanyAndWebsite()
 //     - Return a string combining company name and website.
