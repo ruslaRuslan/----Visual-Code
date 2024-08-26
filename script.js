@@ -1747,5 +1747,24 @@
 // });
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-// #task12 getCompanyAndWebsite()
+// #task13 getCompanyAndWebsite()
 //     - Return a string combining company name and website.
+
+function getCompanyAndWebsite(company) {
+  company = {
+    name: "Tech Innovations",
+    website: "www.techinnovations.com",
+  };
+  console.log(company.name + " - " + company.website);
+}
+getCompanyAndWebsite();
+// _____________________________________________________________________________________________________________________________
+function getCompanyAndWebsite2(company) {
+  let result = `${company.name} - ${company.website}`;
+
+  console.log(result);
+}
+getCompanyAndWebsite2({
+  name: "Tech Innovations",
+  website: "www.techinnovations.com",
+});
