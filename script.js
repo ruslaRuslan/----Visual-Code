@@ -1582,31 +1582,41 @@
 // existsAndTruthy({x:'a',y:null,z:'c'},'y')  // false (obyektde 'y' var amma falsy-di ona gore false)
 // existsAndTruthy({x:'a',b:'b',z:undefined},'z')  // false  (obyektde 'z' yoxdu ona gore false)
 
-function existsAndTruthy(obj, propertyName) {
-  let result = obj.hasOwnProperty(propertyName) && Boolean(obj[propertyName]);
-  console.log(result);
-  return result;
-}
-existsAndTruthy({ a: 1, b: 2, c: 3 }, "b"); // true
-existsAndTruthy({ x: "a", y: null, z: "c" }, "y"); // false (obyektde 'y' var amma falsy-di ona gore false)
-existsAndTruthy({ x: "a", b: "b", z: undefined }, "z"); // false  (obyektde 'z' yoxdu ona gore false)
+// function existsAndTruthy(obj, propertyName) {
+//   let result = obj.hasOwnProperty(propertyName) && Boolean(obj[propertyName]);
+//   console.log(result);
+//   return result;
+// }
+// existsAndTruthy({ a: 1, b: 2, c: 3 }, "b"); // true
+// existsAndTruthy({ x: "a", y: null, z: "c" }, "y"); // false (obyektde 'y' var amma falsy-di ona gore false)
+// existsAndTruthy({ x: "a", b: "b", z: undefined }, "z"); // false  (obyektde 'z' yoxdu ona gore false)
 
 // __________________________________________________________________________________________________________________________________
 // #task4 getID()
 //     - Return the value of the 'id' property.
 
-function getId(obj) {
-  let result = obj.id;
-  console.log(result);
-  return result;
-}
-getId({ id: 8564, name: "Ruslan", surname: "Zeynalov" });
-getId({ id: 5757, name: "Alion", surname: "Isiyev" });
+// function getId(obj) {
+//   let result = obj.id;
+//   console.log(result);
+//   return result;
+// }
+// getId({ id: 8564, name: "Ruslan", surname: "Zeynalov" });
+// getId({ id: 5757, name: "Alion", surname: "Isiyev" });
 
 // __________________________________________________________________________________________________________________________________
 
-// getFullName()
+// #task5 getFullName()
 //     - Return the full name by concatenating the 'name' and 'username' properties.
+
+// const getFullName = function (obj) {
+//   let fullName = `${obj.name} ${obj.surname}`;
+//   console.log(fullName);
+
+//   return fullName;
+// };
+// getFullName({ name: "Ruslan", surname: "Zeynalov", city: "Baku" });
+// getFullName({ name: "Ali", surname: "Isiyev", city: "Baku" });
+// __________________________________________________________________________________________________________________________________
 
 // getAddress()
 //     - Return the full address as a string.
