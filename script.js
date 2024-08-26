@@ -1636,15 +1636,26 @@
 //  #task7 getGeoLocation()
 //     - Return the latitude and longitude as an array.
 
-const getGeoLocation = (obj) => {
-  let array = [obj.latitude, obj.longitude];
-  console.log(array);
-};
-getGeoLocation({ latitude: 586210, longitude: -6247 });
-getGeoLocation({ latitude: 96302, longitude: -5321 });
+// const getGeoLocation = (obj) => {
+//   let array = [obj.latitude, obj.longitude];
+//   console.log(array);
+// };
+// getGeoLocation({ latitude: 586210, longitude: -6247 });
+// getGeoLocation({ latitude: 96302, longitude: -5321 });
 
-// getPhone()
+// __________________________________________________________________________________________________________________________________
+
+// #task8 getPhone()
 //     - Return the phone number.
+
+const getPhone = (obj) => {
+  console.log(obj.phone);
+  return obj.phone;
+};
+getPhone({ phone: 994505574376 });
+getPhone({ phone: 79851618260 });
+
+// __________________________________________________________________________________________________________________________________
 
 // getCompanyInfo()
 //     - Return the company information as a string.
