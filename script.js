@@ -1657,23 +1657,33 @@
 
 // __________________________________________________________________________________________________________________________________
 
-// #task9 getCompanyInfo()
-//     - Return the company information as a string.
+// // #task9 getCompanyInfo()
+// //     - Return the company information as a string.
 
-const getCompanyInfo = (obj) => {
-  console.log(obj.info);
-  return obj.info;
-};
-getCompanyInfo({
-  info: "Apple's flagship smartphone, known for its advanced features and integration with the iOS operating system. The iPhone has seen numerous iterations since its initial launch in 2007.",
-});
-getCompanyInfo({
-  info: "A line of tablet computers that provide a versatile platform for productivity, entertainment, and education. The iPad comes in several models, including the standard iPad, iPad Air, iPad mini, and iPad Pro.",
-});
+// const getCompanyInfo = (obj) => {
+//   console.log(obj.info);
+//   return obj.info;
+// };
+// getCompanyInfo({
+//   info: "Apple's flagship smartphone, known for its advanced features and integration with the iOS operating system. The iPhone has seen numerous iterations since its initial launch in 2007.",
+// });
+// getCompanyInfo({
+//   info: "A line of tablet computers that provide a versatile platform for productivity, entertainment, and education. The iPad comes in several models, including the standard iPad, iPad Air, iPad mini, and iPad Pro.",
+// });
 // __________________________________________________________________________________________________________________________________
 
-// getWebsite()
+// #task10 getWebsite()
 //     - Return the website URL.
+
+const getWebsite = (obj) => {
+  console.log(obj.website);
+
+  return obj.website;
+};
+getWebsite({ website: "https://www.apple.com" });
+getWebsite({ website: "https://www.samsung.com" });
+
+// __________________________________________________________________________________________________________________________________
 
 // getStreet()
 //     - Return the street name.
