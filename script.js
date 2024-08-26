@@ -1618,8 +1618,20 @@
 // getFullName({ name: "Ali", surname: "Isiyev", city: "Baku" });
 // __________________________________________________________________________________________________________________________________
 
-// getAddress()
+// #task6 getAddress()
 //     - Return the full address as a string.
+
+const getAddress = function getAddress(obj) {
+  console.log(obj.address);
+  return obj.address;
+};
+getAddress({
+  name: "Ali",
+  surname: "Isiyev",
+  city: "Baku",
+  address: "Cinarli qesebe C.C kucesi ev 1",
+});
+// __________________________________________________________________________________________________________________________________
 
 // getGeoLocation()
 //     - Return the latitude and longitude as an array.
