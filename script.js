@@ -1675,18 +1675,25 @@
 // #task10 getWebsite()
 //     - Return the website URL.
 
-const getWebsite = (obj) => {
-  console.log(obj.website);
+// const getWebsite = (obj) => {
+//   console.log(obj.website);
 
-  return obj.website;
-};
-getWebsite({ website: "https://www.apple.com" });
-getWebsite({ website: "https://www.samsung.com" });
+//   return obj.website;
+// };
+// getWebsite({ website: "https://www.apple.com" });
+// getWebsite({ website: "https://www.samsung.com" });
 
 // __________________________________________________________________________________________________________________________________
 
-// getStreet()
+// #task11 getStreet()
 //     - Return the street name.
+
+function getStreet(obj) {
+  console.log(obj.street);
+  return obj.street;
+}
+getStreet({ street: "Q.Huseyin kucesi" });
+getStreet({ street: "C.Cabbarli kucesi" });
 
 // getCompanyBs()
 //     - Return the 'bs' property from the company.
