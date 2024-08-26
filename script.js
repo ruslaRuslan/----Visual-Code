@@ -1688,15 +1688,22 @@
 // #task11 getStreet()
 //     - Return the street name.
 
-function getStreet(obj) {
-  console.log(obj.street);
-  return obj.street;
-}
-getStreet({ street: "Q.Huseyin kucesi" });
-getStreet({ street: "C.Cabbarli kucesi" });
+// function getStreet(obj) {
+//   console.log(obj.street);
+//   return obj.street;
+// }
+// getStreet({ street: "Q.Huseyin kucesi" });
+// getStreet({ street: "C.Cabbarli kucesi" });
 
-// getCompanyBs()
+// __________________________________________________________________________________________________________________________________
+
+// #task11 getCompanyBs()
 //     - Return the 'bs' property from the company.
+
+const getCompanyBs = (company) => console.log(company.bs);
+getCompanyBs({ bs: "Leveraging cutting-edge technology" });
+
+// __________________________________________________________________________________________________________________________________
 
 // getZipCode()
 //     - Return the zip code.
