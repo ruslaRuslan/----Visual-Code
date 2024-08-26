@@ -1621,20 +1621,27 @@
 // #task6 getAddress()
 //     - Return the full address as a string.
 
-const getAddress = function getAddress(obj) {
-  console.log(obj.address);
-  return obj.address;
-};
-getAddress({
-  name: "Ali",
-  surname: "Isiyev",
-  city: "Baku",
-  address: "Cinarli qesebe C.C kucesi ev 1",
-});
+// const getAddress = function getAddress(obj) {
+//   console.log(obj.address);
+//   return obj.address;
+// };
+// getAddress({
+//   name: "Ali",
+//   surname: "Isiyev",
+//   city: "Baku",
+//   address: "Cinarli qesebe C.C kucesi ev 1",
+// });
 // __________________________________________________________________________________________________________________________________
 
-// getGeoLocation()
+//  #task7 getGeoLocation()
 //     - Return the latitude and longitude as an array.
+
+const getGeoLocation = (obj) => {
+  let array = [obj.latitude, obj.longitude];
+  console.log(array);
+};
+getGeoLocation({ latitude: 586210, longitude: -6247 });
+getGeoLocation({ latitude: 96302, longitude: -5321 });
 
 // getPhone()
 //     - Return the phone number.
