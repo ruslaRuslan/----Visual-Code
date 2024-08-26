@@ -1717,35 +1717,35 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-// #task11 getZipCode()
+// #task12 getZipCode()
 //     - Return the zip code.
 
-function getZipCode(obj) {
-  obj = {
-    street: "Ahmad mahmudov",
+// function getZipCode(obj) {
+//   obj = {
+//     street: "Ahmad mahmudov",
 
-    city: "Baku",
-    postalCode: 1856,
-    country: "Azerbaijan",
-  };
-  console.log(obj.street, obj.city, obj.postalCode, obj.country);
-  return obj;
-}
-getZipCode();
+//     city: "Baku",
+//     postalCode: 1856,
+//     country: "Azerbaijan",
+//   };
+//   console.log(obj.street, obj.city, obj.postalCode, obj.country);
+//   return obj;
+// }
+// getZipCode();
 // _____________________________________________________________________________________________________________________________
 
-function getZipCode2(obj) {
-  let result = `${obj.street} ${obj.city} ${obj.postalCode} ${obj.country}`;
-  console.log(result);
-  return result;
-}
-getZipCode2({
-  street: "Ahmad mahmudov",
-  city: "Baku",
-  postalCode: 1856,
-  country: "Azerbaijan",
-});
+// function getZipCode2(obj) {
+//   let result = `${obj.street} ${obj.city} ${obj.postalCode} ${obj.country}`;
+//   console.log(result);
+//   return result;
+// }
+// getZipCode2({
+//   street: "Ahmad mahmudov",
+//   city: "Baku",
+//   postalCode: 1856,
+//   country: "Azerbaijan",
+// });
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-// getCompanyAndWebsite()
+// #task12 getCompanyAndWebsite()
 //     - Return a string combining company name and website.
