@@ -1777,21 +1777,38 @@
 // divideByFive(5) ; // 1
 // divideByFive(10) ; // 2
 
-const divideByNumber = (fiveNumber) => {
-  return (divident) => {
-    let result = divident / fiveNumber;
-    console.log(result);
-    return result;
-  };
-};
-const divideByFive = divideByNumber(5);
-divideByFive(5); // 1
-divideByFive(10); // 2
-divideByFive(15); // 3
+// const divideByNumber = (fiveNumber) => {
+//   return (divident) => {
+//     let result = divident / fiveNumber;
+//     console.log(result);
+//     return result;
+//   };
+// };
+// const divideByFive = divideByNumber(5);
+// divideByFive(5); // 1
+// divideByFive(10); // 2
+// divideByFive(15); // 3
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 2. deepClone(obj1, obj2) -> obj1deki butun propertyleri obj2ye menimsetsin
+
+const deepClone = (obj1, obj2) => {
+  obj1 = {
+    a: 1,
+    b: 2,
+    c: {
+      d: 3,
+      e: [8, 9],
+    },
+  };
+
+  let result = (obj2 = obj1);
+  console.log(result);
+  return result;
+};
+deepClone();
+// ___________________________________________________________________________________________________________________________________
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
