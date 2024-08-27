@@ -1813,30 +1813,45 @@
 
 // 3.  deleteProperty(propertyName, obj) ->  verdiyimiz obyektden adini verdiyimiz property-ni silmek
 
-const deleteProperty = (propertyName, obj) => {
-  if (obj.hasOwnProperty(propertyName)) {
-    delete obj[propertyName];
-  }
-  return obj;
-};
-const myObj = {
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4,
-  e: 5,
-};
+// const deleteProperty = (propertyName, obj) => {
+//   if (obj.hasOwnProperty(propertyName)) {
+//     delete obj[propertyName];
+//   }
+//   return obj;
+// };
 
-console.log("Əvvəl:", myObj);
+// const myObj = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+//   d: 4,
+//   e: 5,
+// };
 
-deleteProperty("b", myObj);
-deleteProperty("c", myObj);
+// console.log("Əvvəl:", myObj);
 
-console.log("Sonra:", myObj);
+// deleteProperty("b", myObj);
+// deleteProperty("c", myObj);
+
+// console.log("Sonra:", myObj);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 4. obyektin propertylerinin sayini gosteren funksiya yazin
+
+const objectProperty = (obj) => {
+  const result = Object.keys(obj);
+  return result.length;
+};
+const lengthObject = {
+  surname: "Zeynalov",
+  name: "Ruslan",
+  age: 23,
+  education: "orta",
+  work: "Proqramçı",
+};
+console.log(objectProperty(lengthObject));
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 5
