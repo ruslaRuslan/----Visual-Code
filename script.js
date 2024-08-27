@@ -1839,23 +1839,22 @@
 
 // 4. obyektin propertylerinin sayini gosteren funksiya yazin
 
-const objectProperty = (obj) => {
-  const result = Object.keys(obj);
-  return result.length;
-};
-const lengthObject = {
-  surname: "Zeynalov",
-  name: "Ruslan",
-  age: 23,
-  education: "orta",
-  work: "Proqramçı",
-};
-console.log(objectProperty(lengthObject));
+// const objectProperty = (obj) => {
+//   const result = Object.keys(obj);
+//   return result.length;
+// };
+// const lengthObject = {
+//   surname: "Zeynalov",
+//   name: "Ruslan",
+//   age: 23,
+//   education: "orta",
+//   work: "Proqramçı",
+// };
+// console.log(objectProperty(lengthObject));
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-// 5
-// calculator obyekti yaradin. read, sum, mul(multiply *), div (divide /) , sub (subtract -) methodlari olsun.
+// 5. calculator obyekti yaradin. read, sum, mul(multiply *), div (divide /) , sub (subtract -) methodlari olsun.
 // read -> cagiranda, prompt-la 2 eded alsin ve calculator-a menimsetsin (mes, calculator.ed1 = eded1)
 // sum, mul, div, sub -> console-a eded-lerin +,*,/,- cixarsin. Ve elbette ki, ededleri calculator-dan gotursun. Ve, cagiranda bu funksiyalara argument vermemeliyik. Ozu avtomatik obyektden goturmelidir.
 
@@ -1865,3 +1864,35 @@ console.log(objectProperty(lengthObject));
 // calculator.read();
 // console.log(calculator.sum());
 // console.log(calculator.mul());
+
+let calculator = {
+  ozumnenSadeYazi: function () {
+    this.ed1 = parseFloat(prompt("Birinci ededi daxil et"));
+    this.ed2 = parseFloat(prompt("Ikinci ededi daxil et"));
+  },
+
+  sum: function () {
+    return this.ed1 + this.ed2;
+  },
+  substring: function () {
+    return this.ed1 - this.ed2;
+  },
+  multiply: function () {
+    return this.ed1 * this.ed2;
+  },
+
+  divide: function () {
+    if (this.ed1 === 0) {
+      return "0 hecne-ye bolunmur!!";
+    } else if (this.ed2 === 0) {
+      return "0-a hecne bolunmur!!";
+    } else {
+      return this.ed1 / this.ed2;
+    }
+  },
+};
+calculator.ozumnenSadeYazi();
+console.log("Toplama: " + calculator.sum());
+console.log("Çıxarma: " + calculator.substring());
+console.log("Vurma: " + calculator.multiply());
+console.log("Bölmə: " + calculator.divide());
