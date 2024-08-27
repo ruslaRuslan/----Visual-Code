@@ -1679,7 +1679,6 @@
 
 // const getWebsite = (obj) => {
 //   console.log(obj.website);
-
 //   return obj.website;
 // };
 // getWebsite({ website: "https://www.apple.com" });
@@ -1704,7 +1703,7 @@
 
 // const getCompanyBs = (company) => console.log(company.bs);
 // getCompanyBs({ bs: "Leveraging cutting-edge technology" });
-// _____________________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________________________
 
 // const getCompanyBs2 = (company) => {
 //   company = {
@@ -1750,21 +1749,67 @@
 // #task13 getCompanyAndWebsite()
 //     - Return a string combining company name and website.
 
-function getCompanyAndWebsite(company) {
-  company = {
-    name: "Tech Innovations",
-    website: "www.techinnovations.com",
-  };
-  console.log(company.name + " - " + company.website);
-}
-getCompanyAndWebsite();
-// _____________________________________________________________________________________________________________________________
-function getCompanyAndWebsite2(company) {
-  let result = `${company.name} - ${company.website}`;
+// function getCompanyAndWebsite(company) {
+//   company = {
+//     name: "Tech Innovations",
+//     website: "www.techinnovations.com",
+//   };
+//   console.log(company.name + " - " + company.website);
+// }
+// getCompanyAndWebsite();
+// ___________________________________________________________________________________________________________________________________
+// function getCompanyAndWebsite2(company) {
+//   let result = `${company.name} - ${company.website}`;
 
-  console.log(result);
-}
-getCompanyAndWebsite2({
-  name: "Tech Innovations",
-  website: "www.techinnovations.com",
-});
+//   console.log(result);
+// }
+// getCompanyAndWebsite2({
+//   name: "Tech Innovations",
+//   website: "www.techinnovations.com",
+// });
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Funksiyalari arrow function-la yazin.
+
+// 1. divideByNumber funksiyasi yaradin. Argument olaraq eded alsin ve geriye yeniden argument olaraq eded alan funksiya qaytarsin.
+// Daha sonra funksiyani cagiraraq, geriye qayidan funksiyani bir variable-a menimsedin.
+// const divideByFive = divideByNumber(5);
+// divideByFive(5) ; // 1
+// divideByFive(10) ; // 2
+
+const divideByNumber = (fiveNumber) => {
+  return (divident) => {
+    let result = divident / fiveNumber;
+    console.log(result);
+    return result;
+  };
+};
+const divideByFive = divideByNumber(5);
+divideByFive(5); // 1
+divideByFive(10); // 2
+divideByFive(15); // 3
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 2. deepClone(obj1, obj2) -> obj1deki butun propertyleri obj2ye menimsetsin
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 3.  deleteProperty(propertyName, obj) ->  verdiyimiz obyektden adini verdiyimiz property-ni silmek
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 4. obyektin propertylerinin sayini gosteren funksiya yazin
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 5
+// calculator obyekti yaradin. read, sum, mul(multiply *), div (divide /) , sub (subtract -) methodlari olsun.
+// read -> cagiranda, prompt-la 2 eded alsin ve calculator-a menimsetsin (mes, calculator.ed1 = eded1)
+// sum, mul, div, sub -> console-a eded-lerin +,*,/,- cixarsin. Ve elbette ki, ededleri calculator-dan gotursun. Ve, cagiranda bu funksiyalara argument vermemeliyik. Ozu avtomatik obyektden goturmelidir.
+
+// let calculator = {
+// // ... your code ...
+// };
+// calculator.read();
+// console.log(calculator.sum());
+// console.log(calculator.mul());
