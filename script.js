@@ -1793,26 +1793,46 @@
 
 // 2. deepClone(obj1, obj2) -> obj1deki butun propertyleri obj2ye menimsetsin
 
-const deepClone = (obj1, obj2) => {
-  obj1 = {
-    a: 1,
-    b: 2,
-    c: {
-      d: 3,
-      e: [8, 9],
-    },
-  };
+// const deepClone = (obj1, obj2) => {
+//   obj1 = {
+//     a: 1,
+//     b: 2,
+//     c: {
+//       d: 3,
+//       e: [8, 9],
+//     },
+//   };
 
-  let result = (obj2 = obj1);
-  console.log(result);
-  return result;
-};
-deepClone();
-// ___________________________________________________________________________________________________________________________________
+//   let result = (obj2 = obj1);
+//   console.log(result);
+//   return result;
+// };
+// deepClone();
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // 3.  deleteProperty(propertyName, obj) ->  verdiyimiz obyektden adini verdiyimiz property-ni silmek
+
+const deleteProperty = (propertyName, obj) => {
+  if (obj.hasOwnProperty(propertyName)) {
+    delete obj[propertyName];
+  }
+  return obj;
+};
+const myObj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+  e: 5,
+};
+
+console.log("Əvvəl:", myObj);
+
+deleteProperty("b", myObj);
+deleteProperty("c", myObj);
+
+console.log("Sonra:", myObj);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
