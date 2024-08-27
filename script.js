@@ -1865,34 +1865,56 @@
 // console.log(calculator.sum());
 // console.log(calculator.mul());
 
-let calculator = {
-  ozumnenSadeYazi: function () {
-    this.ed1 = parseFloat(prompt("Birinci ededi daxil et"));
-    this.ed2 = parseFloat(prompt("Ikinci ededi daxil et"));
-  },
+// let calculator = {
+//   ozumnenSadeYazi: function () {
+//     this.ed1 = parseFloat(prompt("Birinci ededi daxil et"));
+//     this.ed2 = parseFloat(prompt("Ikinci ededi daxil et"));
+//   },
 
-  sum: function () {
-    return this.ed1 + this.ed2;
-  },
-  substring: function () {
-    return this.ed1 - this.ed2;
-  },
-  multiply: function () {
-    return this.ed1 * this.ed2;
-  },
+//   sum: function () {
+//     return this.ed1 + this.ed2;
+//   },
+//   substring: function () {
+//     return this.ed1 - this.ed2;
+//   },
+//   multiply: function () {
+//     return this.ed1 * this.ed2;
+//   },
 
-  divide: function () {
-    if (this.ed1 === 0) {
-      return "0 hecne-ye bolunmur!!";
-    } else if (this.ed2 === 0) {
-      return "0-a hecne bolunmur!!";
-    } else {
-      return this.ed1 / this.ed2;
-    }
-  },
-};
-calculator.ozumnenSadeYazi();
-console.log("Toplama: " + calculator.sum());
-console.log("Çıxarma: " + calculator.substring());
-console.log("Vurma: " + calculator.multiply());
-console.log("Bölmə: " + calculator.divide());
+//   divide: function () {
+//     if (this.ed1 === 0) {
+//       return "0 hecne-ye bolunmur!!";
+//     } else if (this.ed2 === 0) {
+//       return "0-a hecne bolunmur!!";
+//     } else {
+//       return this.ed1 / this.ed2;
+//     }
+//   },
+// };
+// calculator.ozumnenSadeYazi();
+// console.log("Toplama: " + calculator.sum());
+// console.log("Çıxarma: " + calculator.substring());
+// console.log("Vurma: " + calculator.multiply());
+// console.log("Bölmə: " + calculator.divide());
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// 6. Car constructor-u yaradin. Biz hemin constructor-u cagiranda onun modelini, istehsal ilini, sahibini verek. Ve elbette, masinin surmek, tormozlamaq kimi methodlari olmalidir ki, onlari da verin. Meselen, surmek methodunu cagirsam ekrana,  ali zapi markali masinina qaz verir.
+
+// class Car {
+//   constructor(model, year, owner) {
+//     this.model = model;
+//     this.year = year;
+//     this.owner = owner;
+
+//     this.drive = function () {
+//       console.log(`${this.owner} ${this.model} markali masina qaz verir`);
+//     };
+//     this.brake = function () {
+//       console.log(`${this.owner} ${this.model} markali masini tormozlayir`);
+//     };
+//   }
+// }
+// const NewCar = new Car("Ali", 2024, "Mehman");
+// NewCar.drive();
+// NewCar.brake();
