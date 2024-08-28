@@ -1928,24 +1928,33 @@
 // car2 yarat, ve kopyala (modeli ve il deyis)
 // Her iki obyekti console-a cixart.
 
-let car = {
-  model: "zapi",
-  il: 1969,
-  olke: "russiya",
-};
+// let car = {
+//   model: "zapi",
+//   il: 1969,
+//   olke: "russiya",
+// };
 
-let car2 = {
-  ...car,
-  model: "jiquli",
-  il: 1966,
-};
-console.log("car:", car);
-console.log("car2:", car2);
+// let car2 = {
+//   ...car,
+//   model: "jiquli",
+//   il: 1966,
+// };
+// console.log("car:", car);
+// console.log("car2:", car2);
 
-// -----------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // T2. Bir Arrow  funksiya yarat. Ona car obyektini verim. O console-a bele bir mesaj cixartsin:
 // showInfo(car)
 // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
+
+let car = { model: "zapi", il: 1969, olke: "russiya" };
+const showInfo = (car) => {
+  console.log(
+    `${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`
+  );
+};
+showInfo(car);
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T3. showAge(car) // Verilen masinin 55 yasi var.
