@@ -2026,3 +2026,12 @@ isSameName(car, car2);
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T10. isSameOwner(car, car3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
+
+const isSameOwner = (car, car3) => {
+  if (car.ad === car3.ad) {
+    console.log("Bunlar eyni adama mexsusdur");
+  } else {
+    console.log("bunlar ferqli adamlara mexsusdur");
+  }
+};
+isSameOwner(car, car3);
