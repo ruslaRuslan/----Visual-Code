@@ -1923,7 +1923,7 @@
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-const car = { model: "zapi", il: 1969, olke: "russiya" };
+// const car = { model: "zapi", il: 1969, olke: "russiya" };
 // T1. car obyekti yarat (model, il, olke)
 // car2 yarat, ve kopyala (modeli ve il deyis)
 // Her iki obyekti console-a cixart.
@@ -1942,6 +1942,8 @@ const car = { model: "zapi", il: 1969, olke: "russiya" };
 // showInfo(car)
 // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
 
+// const car = { model: "zapi", il: 1969, olke: "russiya" };
+
 // const showInfo = (car) => {
 //   console.log(
 //     `${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`
@@ -1952,6 +1954,7 @@ const car = { model: "zapi", il: 1969, olke: "russiya" };
 
 // T3. showAge(car) // Verilen masinin 55 yasi var.
 
+// const car = { model: "zapi", il: 1969, olke: "russiya" };
 // const showAge = () => {
 //   const date = new Date();
 //   const fullYear = date.getFullYear();
@@ -1962,6 +1965,11 @@ const car = { model: "zapi", il: 1969, olke: "russiya" };
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T4. car obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
+
+// const sahib = { ad: "Ruslan", soyad: "Zeynalov", dogumIl: 2000 };
+// const car = { ...sahib, model: "zapi", il: 1969, olke: "russiya" };
+// console.log(car);
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T5. showOwner(car) // zapi markali masinin sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
