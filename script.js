@@ -1976,7 +1976,7 @@ const showOwner = (car) => {
     `${sahib.model} markali masinin sahibi ${sahib.soyad} ${sahib.ad}-dir. O ${sahib.dogumIl}-ci ilde dogulub`
   );
 };
-showOwner(car);
+showOwner(sahib);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -1989,11 +1989,14 @@ const showAgeDifferences = (car) => {
     } il`
   );
 };
-showAgeDifferences();
+showAgeDifferences(sahib);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
+
+// const car3 = { ...sahib, ad: "Ali", soyad: "Isiyev", dogumIl: 1995 };
+// console.log(car3);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
