@@ -1923,18 +1923,18 @@
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-// const car = { model: "zapi", il: 1969, olke: "russiya" };
+const car = { model: "zapi", il: 1969, olke: "russiya" };
 // T1. car obyekti yarat (model, il, olke)
 // car2 yarat, ve kopyala (modeli ve il deyis)
 // Her iki obyekti console-a cixart.
 
-// let car2 = {
-//   ...car,
-//   model: "jiquli",
-//   il: 1966,
-// };
-// console.log("car:", car);
-// console.log("car2:", car2);
+let car2 = {
+  ...car,
+  model: "jiquli",
+  il: 1966,
+};
+console.log("car:", car);
+console.log("car2:", car2);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -1942,51 +1942,55 @@
 // showInfo(car)
 // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
 
-// const car = { model: "zapi", il: 1969, olke: "russiya" };
-
-// const showInfo = () => {
-//   console.log(
-//     `${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`
-//   );
-// };
-// showInfo(car);
+const showInfo = (car) => {
+  console.log(
+    `${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`
+  );
+};
+showInfo(car);
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T3. showAge(car) // Verilen masinin 55 yasi var.
 
-// const car = { model: "zapi", il: 1969, olke: "russiya" };
-// const showAge = (car) => {
-//   const date = new Date();
-//   const fullYear = date.getFullYear();
+const showAge = (car) => {
+  const date = new Date();
+  const fullYear = date.getFullYear();
 
-//   console.log(`Verilen masinin ${fullYear - car.il} yasi var`);
-// };
-// showAge(car);
+  console.log(`Verilen masinin ${fullYear - car.il} yasi var`);
+};
+showAge(car);
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T4. car obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
 
-// const sahib = { ad: "Ruslan", soyad: "Zeynalov", dogumIl: 2000 };
-// const car = { ...sahib, model: "zapi", il: 1969, olke: "russiya" };
-// console.log(car);
+const sahib = { ...car, ad: "Ruslan", soyad: "Zeynalov", dogumIl: 2000 };
+
+console.log(sahib);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T5. showOwner(car) // zapi markali masinin sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
 
-// const sahib = { ad: "Ruslan", soyad: "Zeynalov", dogumIl: 2000 };
-// const car = { ...sahib, model: "zapi", il: 1969, olke: "russiya" };
-
-// const showOwner = (car) => {
-//   console.log(
-//     `${car.model} markali masinin sahibi ${car.soyad} ${car.ad}-dir. O ${car.dogumIl}-ci ilde dogulub`
-//   );
-// };
-// showOwner(car);
+const showOwner = (car) => {
+  console.log(
+    `${sahib.model} markali masinin sahibi ${sahib.soyad} ${sahib.ad}-dir. O ${sahib.dogumIl}-ci ilde dogulub`
+  );
+};
+showOwner(car);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T6. showAgeDifferences(car) // sahibinin dogum ili ile masinin il ferqi. (sahib 2000, zapi 1969) -> 31 il.
+
+const showAgeDifferences = (car) => {
+  console.log(
+    `(sahib ${sahib.dogumIl}, ${sahib.model} ${sahib.il}) -> ${
+      sahib.dogumIl - sahib.il
+    } il`
+  );
+};
+showAgeDifferences();
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
