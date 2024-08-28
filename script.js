@@ -1,28 +1,28 @@
 // const name = "Ruslan and Ali";
 
-// // console.log(name.length); // 14 (metnin sayir)
-// //---------------------------------------------------
+// console.log(name.length); // 14 (metnin sayir)
+//---------------------------------------------------
 
-// // console.log(name.includes("us")); //true
-// // console.log(name.includes("and", 7)); //true (baslangicdan and-e qeder true onan sonra false olacax!)
-// // console.log(name.includes("and", 8)); //false (baslangicdan and-e qeder true onan sonra false olacax!)
-// // console.log(name.includes("d ")); //true
-// // console.log(name.includes("8nd")); //false
+// console.log(name.includes("us")); //true
+// console.log(name.includes("and", 7)); //true (baslangicdan and-e qeder true onan sonra false olacax!)
+// console.log(name.includes("and", 8)); //false (baslangicdan and-e qeder true onan sonra false olacax!)
+// console.log(name.includes("d ")); //true
+// console.log(name.includes("8nd")); //false
 // // eyer metndeki yaziraldan biri varsa true verecek. Eyer yoxdusa false qaytaracax!
 
 // //----------------------------------------------------------------------------------------------
 
-// // console.log(name.indexOf("and Ali")); // 7 necenciden basladigini gosterir (eyer sef olarsa -1 verecek)
+// console.log(name.indexOf("and Ali")); // 7 necenciden basladigini gosterir (eyer sef olarsa -1 verecek)
 
-// // console.log(name.indexOf("Ali", 11)); // 11 reqemi 0-dan 11-e qeder ne reqem yazsam 11 verecek (eyer sef yazsam -1 verecek)
+// console.log(name.indexOf("Ali", 11)); // 11 reqemi 0-dan 11-e qeder ne reqem yazsam 11 verecek (eyer sef yazsam -1 verecek)
 
 // //----------------------------------------------------------------------------------------------
-// // console.log(name.lastIndexOf("Ali", 11)); // 11 reqemi 11-dan yuxari ne reqem yazsam 11 verecek (eyer 11-den asagi yazsam -1 verecek)
+// console.log(name.lastIndexOf("Ali", 11)); // 11 reqemi 11-dan yuxari ne reqem yazsam 11 verecek (eyer 11-den asagi yazsam -1 verecek)
 
 // // console.log(name.lastIndexOf("and", 1201)); // 7 reqemi 7-dan yuxari ne reqem yazsam 7 verecek (eyer 11-den asagi yazsam -1 verecek)
 
 // //----------------------------------------------------------------------------------------------
-// // console.log(name.repeat(3)); // Ruslan and AliRuslan and AliRuslan and Ali  (3 defe tekrar string-de olani tekrar qaytarir.)
+// console.log(name.repeat(3)); // Ruslan and AliRuslan and AliRuslan and Ali  (3 defe tekrar string-de olani tekrar qaytarir.)
 
 // //----------------------------------------------------------------------------------------------
 
@@ -78,16 +78,16 @@
 //     budget: 3140,
 //   },
 // ];
-// // forEach
-// // people.forEach(function (person) {
-// //   console.log(person);
-// // });
+// forEach;
+// people.forEach(function (person) {
+//   console.log(person);
+// });
 
-// // {name: 'Ruslan', age: 23, budget: 2500}
-// // {name: 'Ali', age: 24, budget: 4200}
-// // {name: 'Ramin', age: 21, budget: 2400}
-// // {name: 'Isa', age: 26, budget: 3140}
-// // _______________________________________________________________________________________________________________________________________
+// {name: 'Ruslan', age: 23, budget: 2500}
+// {name: 'Ali', age: 24, budget: 4200}
+// {name: 'Ramin', age: 21, budget: 2400}
+// {name: 'Isa', age: 26, budget: 3140}
+// _______________________________________________________________________________________________________________________________________
 
 // // forEach
 // // people.forEach((person) => console.log(person));
@@ -1902,19 +1902,74 @@
 // 6. Car constructor-u yaradin. Biz hemin constructor-u cagiranda onun modelini, istehsal ilini, sahibini verek. Ve elbette, masinin surmek, tormozlamaq kimi methodlari olmalidir ki, onlari da verin. Meselen, surmek methodunu cagirsam ekrana,  ali zapi markali masinina qaz verir.
 
 // class Car {
-//   constructor(model, year, owner) {
-//     this.model = model;
-//     this.year = year;
-//     this.owner = owner;
+//     constructor(model, year, owner) {
+//         {
+//             this.model = model;
+//             this.year = year;
+//             this.owner = owner;
 
-//     this.drive = function () {
-//       console.log(`${this.owner} ${this.model} markali masina qaz verir`);
-//     };
-//     this.brake = function () {
-//       console.log(`${this.owner} ${this.model} markali masini tormozlayir`);
-//     };
-//   }
+//             this.drive = function () {
+//                 console.log(`${this.owner} ${this.model} markali masina qaz verir`);
+//             };
+//             this.brake = function () {
+//                 console.log(`${this.owner} ${this.model} markali masini tormozlayir`);
+//             };
+//         }
+//     }
 // }
 // const NewCar = new Car("Ali", 2024, "Mehman");
 // NewCar.drive();
 // NewCar.brake();
+
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+// const car = {model:'zapi',il:1969, olke: 'russiya'}
+// T1. car obyekti yarat (model, il, olke)
+// car2 yarat, ve kopyala (modeli ve il deyis)
+// Her iki obyekti console-a cixart.
+
+let car = {
+  model: "zapi",
+  il: 1969,
+  olke: "russiya",
+};
+
+let car2 = {
+  ...car,
+  model: "jiquli",
+  il: 1966,
+};
+console.log("car:", car);
+console.log("car2:", car2);
+
+// -----------------------------------------------
+// T2. Bir Arrow  funksiya yarat. Ona car obyektini verim. O console-a bele bir mesaj cixartsin:
+// showInfo(car)
+// -> zapi markali masin, 1969-da russiya-da istehsal olunub.
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T3. showAge(car) // Verilen masinin 55 yasi var.
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T4. car obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T5. showOwner(car) // zapi markali masinin sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T6. showAgeDifferences(car) // sahibinin dogum ili ile masinin il ferqi. (sahib 2000, zapi 1969) -> 31 il.
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T8. isEqual(car, car3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T9. isSameName(car, car2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// T10. isSameOwner(car, car3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
