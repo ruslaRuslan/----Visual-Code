@@ -1944,7 +1944,7 @@
 
 // const car = { model: "zapi", il: 1969, olke: "russiya" };
 
-// const showInfo = (car) => {
+// const showInfo = () => {
 //   console.log(
 //     `${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`
 //   );
@@ -1955,7 +1955,7 @@
 // T3. showAge(car) // Verilen masinin 55 yasi var.
 
 // const car = { model: "zapi", il: 1969, olke: "russiya" };
-// const showAge = () => {
+// const showAge = (car) => {
 //   const date = new Date();
 //   const fullYear = date.getFullYear();
 
@@ -1973,6 +1973,17 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T5. showOwner(car) // zapi markali masinin sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
+
+// const sahib = { ad: "Ruslan", soyad: "Zeynalov", dogumIl: 2000 };
+// const car = { ...sahib, model: "zapi", il: 1969, olke: "russiya" };
+
+// const showOwner = (car) => {
+//   console.log(
+//     `${car.model} markali masinin sahibi ${car.soyad} ${car.ad}-dir. O ${car.dogumIl}-ci ilde dogulub`
+//   );
+// };
+// showOwner(car);
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T6. showAgeDifferences(car) // sahibinin dogum ili ile masinin il ferqi. (sahib 2000, zapi 1969) -> 31 il.
