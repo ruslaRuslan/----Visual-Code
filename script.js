@@ -1989,23 +1989,40 @@ const showAgeDifferences = (car) => {
     } il`
   );
 };
-showAgeDifferences(sahib);
+showAgeDifferences(car);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
 
-// const car3 = { ...sahib, ad: "Ali", soyad: "Isiyev", dogumIl: 1995 };
-// console.log(car3);
+const car3 = { ...sahib, ad: "Ali", soyad: "Isiyev", dogumIl: 1995 };
+console.log(car3);
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T8. isEqual(car, car3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
 
+const isEqual = (car, car3) => {
+  if (JSON.stringify(car) === JSON.stringify(car3)) {
+    console.log("Bunlar eyni obyektlerdir");
+  } else {
+    console.log("Bunlar ferqli obyektlerdir");
+  }
+};
+isEqual();
+
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T9. isSameName(car, car2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
 
+const isSameName = () => {
+  if (car.model === car2.model) {
+    console.log("Bunlar eyni modeldirler");
+  } else {
+    console.log("bunlar ferqli modeldirler");
+  }
+};
+isSameName(car, car2);
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // T10. isSameOwner(car, car3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
